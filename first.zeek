@@ -8,7 +8,7 @@ redef Weird::actions: table[string] of Weird::Action += {
 	["Possible_Steganography"] = Weird::ACTION_NOTICE,
 };
 
-
+#github test
 event zeek_init()
 
         {
