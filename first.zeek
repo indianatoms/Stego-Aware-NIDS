@@ -40,6 +40,15 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
 		if (id_changes_counter == 2){
 #temporary solution for the sake of example -- remeber to improve.
 			print "Possible id number stego";
+			NOTICE([$note=Possible_Steganography,
+    	 			$msg = "Possible ID number Steganography",
+        			$sub = "Id number of ICMP is not appearing in order",
+				$conn = c]);
+			Weird::weird([
+			$ts=network_time(),
+			$name="Possible_Staeganography",
+			$conn=c,
+			$notice=T]); #check whats going on over here
 		}
 	}
 	else
