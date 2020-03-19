@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	notice
+#open	2020-03-19-16-05-34
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	fuid	file_mime_type	file_desc	proto	note	msg	sub	src	dst	p	n	peer_descr	actions	suppress_for	remote_location.country_code	remote_location.region	remote_location.city	remote_location.latitude	remote_location.longitude
+#types	time	string	addr	port	addr	port	string	string	string	enum	enum	string	string	addr	addr	port	count	string	set[enum]	interval	string	string	string	double	double
+1584648334.525748	Cv8LZE2uUPHOzsq00k	192.168.1.107	8	192.168.1.24	0	-	-	-	icmp	Possible_Steganography	Possible Sequence Steganography	Sequence number of ICMP is not appearing in order	192.168.1.107	192.168.1.24	0	-	-	Notice::ACTION_LOG	3600.000000	-	-	-	-	-
+1584648335.533354	Cv8LZE2uUPHOzsq00k	192.168.1.107	8	192.168.1.24	0	-	-	-	icmp	Possible_Steganography	Possible Sequence Steganography	Sequence number of ICMP is not appearing in order	192.168.1.107	192.168.1.24	0	-	-	Notice::ACTION_LOG	3600.000000	-	-	-	-	-
+1584648336.591438	Cv8LZE2uUPHOzsq00k	192.168.1.107	8	192.168.1.24	0	-	-	-	icmp	Possible_Steganography	Possible Sequence Steganography	Sequence number of ICMP is not appearing in order	192.168.1.107	192.168.1.24	0	-	-	Notice::ACTION_LOG	3600.000000	-	-	-	-	-
+1584648360.244296	Cv8LZE2uUPHOzsq00k	192.168.1.107	8	192.168.1.24	0	-	-	-	icmp	Possible_Steganography	Possible ID number Steganography	Id number of ICMP is not appearing in order	192.168.1.107	192.168.1.24	0	-	-	Notice::ACTION_LOG	3600.000000	-	-	-	-	-
+#close	2020-03-19-16-06-09

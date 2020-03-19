@@ -1,0 +1,27 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	conn
+#open	2020-03-19-16-05-03
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
+#types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
+1584648293.904531	CsFj1341Xnz3vGcVMc	192.168.1.107	5353	224.0.0.251	5353	udp	dns	-	-	-	S0	-	-	0	D	1	182	0	0	-
+1584648287.051075	CWgXTQ221awIs5Nhjf	fe80::1c70:ffab:d39b:14dd	5353	ff02::fb	5353	udp	dns	4.002656	336	0	S0	-	-	0	D	3	480	0	0	-
+1584648287.051062	ChpRMS1QGYmcH7V0Uj	192.168.1.12	5353	224.0.0.251	5353	udp	dns	4.002597	336	0	S0	-	-	0	D	3	420	0	0	-
+1584648293.810117	CqYYBK3UehUvC8XIyd	192.168.1.1	5353	224.0.0.251	5353	udp	dns	15.101173	1479	0	S0	-	-	0	D	5	1619	0	0	-
+1584648325.006139	C0ygTjmMk5VvInVS	192.168.1.1	5353	224.0.0.251	5353	udp	dns	-	-	-	S0	-	-	0	D	1	163	0	0	-
+1584648322.160240	CiCgGP1FZqbiieb1p6	192.168.1.107	137	192.168.1.255	137	udp	dns	1.356631	150	0	S0	-	-	0	D	3	234	0	0	-
+1584648296.855306	CZ80od2UJvSWaaR4j	192.168.1.107	68	255.255.255.255	67	udp	dhcp	-	-	-	S0	-	-	0	D	1	328	0	0	-
+1584648356.816892	CYGgM3HVFaTvv9bm7	192.168.1.1	5353	224.0.0.251	5353	udp	dns	-	-	-	S0	-	-	0	D	1	163	0	0	-
+1584648363.298601	CIrrJx2zBRtA9d8LZj	192.168.1.12	5353	224.0.0.251	5353	udp	dns	0.996384	224	0	S0	-	-	0	D	2	280	0	0	-
+1584648363.298615	C3ZNMa3NwKsXVWlmm8	fe80::1c70:ffab:d39b:14dd	5353	ff02::fb	5353	udp	dns	0.997778	224	0	S0	-	-	0	D	2	320	0	0	-
+1584648363.476583	CdP0le2ZiEVDuTOE1k	192.168.1.1	1900	239.255.255.250	1900	udp	-	0.000203	1403	0	S0	-	-	0	D	4	1515	0	0	-
+1584648303.929246	CZe1233IGLzk5S4IX9	192.168.1.107	61292	239.255.255.250	1900	udp	-	63.204001	1064	0	S0	-	-	0	D	8	1288	0	0	-
+1584648358.120314	CQKJ9549CzWvadkmw6	192.168.1.107	68	255.255.255.255	67	udp	dhcp	-	-	-	S0	-	-	0	D	1	328	0	0	-
+1584648333.482359	Cv8LZE2uUPHOzsq00k	192.168.1.107	8	192.168.1.24	0	icmp	-	29.891603	260	260	OTH	-	-	0	-	8	484	8	484	-
+1584648345.138187	CMvEG42fE5vCVegc47	fe80::a00:27ff:fed6:f362	129	fe80::ae84:c9ff:fe2c:afc2	128	icmp	-	-	-	-	OTH	-	-	0	-	1	104	0	0	-
+1584648350.374071	CNaYwR3nCyHDRaauG1	fe80::a00:27ff:fed6:f362	135	fe80::ae84:c9ff:fe2c:afc2	136	icmp	-	0.022292	24	16	OTH	-	-	0	-	1	72	1	64	-
+1584648355.453172	CHRI6T38bTCsmbO8gc	fe80::ae84:c9ff:fe2c:afc2	135	fe80::a00:27ff:fed6:f362	136	icmp	-	0.000094	24	16	OTH	-	-	0	-	1	72	1	64	-
+1584648345.138148	Cb2X9q118w3CMjMPW	fe80::ae84:c9ff:fe2c:afc2	128	ff02::1	129	icmp	-	-	-	-	OTH	-	-	0	-	1	104	0	0	-
+#close	2020-03-19-16-06-09
