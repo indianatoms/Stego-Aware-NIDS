@@ -3,10 +3,9 @@
 #empty_field	(empty)
 #unset_field	-
 #path	weird
-#open	2020-03-19-16-04-50
+#open	2020-03-24-19-06-46
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
 #types	time	string	addr	port	addr	port	string	string	bool	string
-1584648290.121997	-	-	-	-	-	unknown_protocol	2	F	zeek
-1584648302.200685	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
-1584648334.525748	Cv8LZE2uUPHOzsq00k	192.168.1.107	8	192.168.1.24	0	Possible_Staeganography	-	T	zeek
-#close	2020-03-19-16-06-09
+1585091205.579753	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
+1585091211.531638	-	-	-	-	-	unknown_protocol	2	F	zeek
+#close	2020-03-24-19-09-04

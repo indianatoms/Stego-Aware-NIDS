@@ -3,28 +3,15 @@
 #empty_field	(empty)
 #unset_field	-
 #path	dns
-#open	2020-03-19-16-05-03
+#open	2020-03-24-19-06-37
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
 #types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
-1584648293.904531	CsFj1341Xnz3vGcVMc	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
-1584648287.051075	CWgXTQ221awIs5Nhjf	fe80::1c70:ffab:d39b:14dd	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648288.297154	CWgXTQ221awIs5Nhjf	fe80::1c70:ffab:d39b:14dd	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648291.053731	CWgXTQ221awIs5Nhjf	fe80::1c70:ffab:d39b:14dd	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648287.051062	ChpRMS1QGYmcH7V0Uj	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648288.297126	ChpRMS1QGYmcH7V0Uj	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648291.053659	ChpRMS1QGYmcH7V0Uj	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648293.810117	CqYYBK3UehUvC8XIyd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648294.814126	CqYYBK3UehUvC8XIyd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648296.876825	CqYYBK3UehUvC8XIyd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648300.937430	CqYYBK3UehUvC8XIyd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648308.911290	CqYYBK3UehUvC8XIyd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648325.006311	C0ygTjmMk5VvInVS	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648322.160240	CiCgGP1FZqbiieb1p6	192.168.1.107	137	192.168.1.255	137	udp	54602	-	DELL-T-L	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
-1584648322.779465	CiCgGP1FZqbiieb1p6	192.168.1.107	137	192.168.1.255	137	udp	54602	-	DELL-T-L	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
-1584648323.516871	CiCgGP1FZqbiieb1p6	192.168.1.107	137	192.168.1.255	137	udp	54602	-	DELL-T-L	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
-1584648356.816892	CYGgM3HVFaTvv9bm7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648363.298601	CIrrJx2zBRtA9d8LZj	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648364.294985	CIrrJx2zBRtA9d8LZj	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648363.298615	C3ZNMa3NwKsXVWlmm8	fe80::1c70:ffab:d39b:14dd	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
-1584648364.296393	C3ZNMa3NwKsXVWlmm8	fe80::1c70:ffab:d39b:14dd	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-#close	2020-03-19-16-06-09
+1585091197.400528	CWzEVa4bEq8WnNqeQh	192.168.1.1	5353	224.0.0.251	5353	udp	0	0.000545	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	ssw on funbox._ssw._tcp.local,TXT 19 capabilities=master TXT 13 protocol=mqtt,funbox.local,192.168.1.1,ssw on funbox._mqtt._tcp.local,TXT 31 topics=sah/from/$CN/pair-device,funbox.local,funbox._http._tcp.local,TXT 0 ,funbox.local	4500.000000,4500.000000,120.000000,120.000000,4500.000000,4500.000000,120.000000,4500.000000,4500.000000,120.000000	F
+1585091197.479355	CZRB3b24ZG11GH4ig	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 5 path= TXT 8 caps=LDS,_opcua-tcp._tcp.local,dell-t-l.local	4500.000000,4500.000000,120.000000	F
+1585091198.322140	CWzEVa4bEq8WnNqeQh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585091200.472508	CWzEVa4bEq8WnNqeQh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585091204.467641	CWzEVa4bEq8WnNqeQh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585091212.453586	CWzEVa4bEq8WnNqeQh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585091228.427608	C9PJIj2f4JL8qTLTNb	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585091260.376649	CjnMh84Kcul664Edu	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+#close	2020-03-24-19-09-04

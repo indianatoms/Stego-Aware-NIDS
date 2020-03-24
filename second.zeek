@@ -56,7 +56,7 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
 		id_changes_counter = 0;
 	}
 
-        if (old_seq != seq-1 && old_seq != 0 && old_id == id){
+        if (old_seq != seq-1 && old_seq != 0){
                 	print "possible sequence number stego";
 			NOTICE([$note=Possible_Steganography,
     	 			$msg = "Possible Sequence Steganography",
@@ -71,4 +71,8 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
         
         old_seq = seq;
 	old_id = id;
+	}
+
+event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string){
+		print flags;
 	}
