@@ -1,0 +1,10 @@
+Hello, World!
+[ip=<uninitialized>, ip6=[class=0, flow=0, len=64, nxt=58, hlim=255, src=fe80::ae84:c9ff:fe2c:afc2, dst=ff02::1, exts=[]], tcp=<uninitialized>, udp=<uninitialized>, icmp=[icmp_type=128]]
+Current seq number is : , 0
+Current id nuber is : , 823
+[ip=<uninitialized>, ip6=[class=0, flow=671903, len=64, nxt=58, hlim=64, src=fe80::a00:27ff:fed6:f362, dst=fe80::ae84:c9ff:fe2c:afc2, exts=[]], tcp=<uninitialized>, udp=<uninitialized>, icmp=[icmp_type=129]]
+[ip=[hl=20, tos=0, len=40, id=1, ttl=255, p=6, src=192.168.1.107, dst=192.168.1.104], ip6=<uninitialized>, tcp=[sport=20/tcp, dport=80/tcp, seq=0, ack=0, hl=20, dl=0, reserved=14, flags=2, win=8192], udp=<uninitialized>, icmp=<uninitialized>]
+S\x0e
+[ip=[hl=20, tos=0, len=40, id=0, ttl=64, p=6, src=192.168.1.104, dst=192.168.1.107], ip6=<uninitialized>, tcp=[sport=80/tcp, dport=20/tcp, seq=0, ack=1, hl=20, dl=0, reserved=0, flags=20, win=0], udp=<uninitialized>, icmp=<uninitialized>]
+RA
+Goodbye, World!

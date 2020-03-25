@@ -76,3 +76,8 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
 event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string){
 		print flags;
 	}
+
+event new_packet (c: connection, p: pkt_hdr){
+#	print c;
+	print p;
+}
