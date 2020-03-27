@@ -3,10 +3,13 @@
 #empty_field	(empty)
 #unset_field	-
 #path	conn
-#open	2020-03-25-06-38-12
+#open	2020-03-27-13-30-46
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	service	duration	orig_bytes	resp_bytes	conn_state	local_orig	local_resp	missed_bytes	history	orig_pkts	orig_ip_bytes	resp_pkts	resp_ip_bytes	tunnel_parents
 #types	time	string	addr	port	addr	port	enum	string	interval	count	count	string	bool	bool	count	string	count	count	count	count	set[string]
-1585132689.391312	CbaLFsklinWuZh807	192.168.1.107	20	192.168.1.104	80	tcp	-	0.000021	0	0	REJ	-	-	0	Sr	1	40	1	40	-
-1585132689.121422	CcPpAU33vP8I6lxt31	fe80::a00:27ff:fed6:f362	129	fe80::ae84:c9ff:fe2c:afc2	128	icmp	-	-	-	-	OTH	-	-	0	-	1	104	0	0	-
-1585132689.121382	CK6yA2FKyiMTn9ek6	fe80::ae84:c9ff:fe2c:afc2	128	ff02::1	129	icmp	-	-	-	-	OTH	-	-	0	-	1	104	0	0	-
-#close	2020-03-25-06-38-12
+1585330242.330476	CV6J1aAiGPccmuXZ5	192.168.1.26	20	192.168.1.104	80	tcp	-	0.000082	0	0	REJ	-	-	0	Sr	1	40	1	40	-
+1585330245.062756	CwZo2O3zM6Oy63o9f	192.168.1.1	5353	224.0.0.251	5353	udp	dns	2.764933	1180	0	S0	-	-	0	D	3	1264	0	0	-
+1585330245.108512	C6q6M42TXJxH6WBIgh	192.168.1.107	5353	224.0.0.251	5353	udp	dns	-	-	-	S0	-	-	0	D	1	182	0	0	-
+1585330245.370135	CoLRi2iUTbnRnBJDb	192.168.1.33	5353	224.0.0.251	5353	udp	dns	-	-	-	S0	-	-	0	D	1	215	0	0	-
+1585330246.496245	CZEJmD1aMYFCmj5lib	192.168.1.26	20	192.168.1.104	80	tcp	-	0.000056	0	0	REJ	-	-	0	Sr	1	40	1	40	-
+1585330247.072099	CavU3A4Kl7BGunsOb2	fe80::5872:fc63:5759:9eeb	546	ff02::1:2	547	udp	-	0.999513	176	0	S0	-	-	0	D	2	272	0	0	-
+#close	2020-03-27-13-30-48

@@ -73,11 +73,23 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
 	old_id = id;
 	}
 
-event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string){
-		print flags;
-	}
+#event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string)
+#	{
+#	print flags;
+#	}
 
 event new_packet (c: connection, p: pkt_hdr){
-#	print c;
-	print p;
+	if(p ?$ tcp && p$tcp$reserved != 0 ){
+			print "Reserved bits number is : ",p$tcp$reserved;
+			print "Possible Reserved Bits Stego";
+			NOTICE([$note=Possible_Steganography,
+                                  $msg = "Possible reserved bits TCP steganography",
+                                  $sub = "TCP reserved bits are not equal to zero",
+                                  $conn = c]);
+                        Weird::weird([
+                        $ts=network_time(),
+                        $name="Possible_Staeganography",
+                        $conn=c,
+                        $notice=T]); #check whats going on over here
+	}
 }

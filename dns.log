@@ -3,12 +3,12 @@
 #empty_field	(empty)
 #unset_field	-
 #path	dns
-#open	2020-03-25-05-48-24
+#open	2020-03-27-13-30-48
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
 #types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
-1585129694.395213	C5mo5k1HxY3jZCm7g8	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
-1585129694.265825	Csh6Noa2CaYLOKFlg	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585129695.187629	Csh6Noa2CaYLOKFlg	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585129697.031521	Csh6Noa2CaYLOKFlg	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585129701.027633	Csh6Noa2CaYLOKFlg	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-#close	2020-03-25-05-48-28
+1585330245.062756	CwZo2O3zM6Oy63o9f	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585330245.984266	CwZo2O3zM6Oy63o9f	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585330247.827689	CwZo2O3zM6Oy63o9f	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585330245.108512	C6q6M42TXJxH6WBIgh	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1585330245.370135	CoLRi2iUTbnRnBJDb	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+#close	2020-03-27-13-30-48

@@ -3,9 +3,9 @@
 #empty_field	(empty)
 #unset_field	-
 #path	reporter
-#open	2020-03-25-06-38-12
+#open	2020-03-27-13-30-48
 #fields	ts	level	message	location
 #types	time	enum	string	string
-1585132692.755170	Reporter::INFO	received termination signal	(empty)
-1585132692.755170	Reporter::INFO	7 packets received on interface eth1, 0 (0.00%) dropped	(empty)
-#close	2020-03-25-06-38-12
+1585330248.342013	Reporter::INFO	received termination signal	(empty)
+1585330248.342013	Reporter::INFO	17 packets received on interface eth1, 0 (0.00%) dropped	(empty)
+#close	2020-03-27-13-30-48

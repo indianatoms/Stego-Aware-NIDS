@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	notice
+#open	2020-03-27-13-30-42
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	fuid	file_mime_type	file_desc	proto	note	msg	sub	src	dst	p	n	peer_descr	actions	suppress_for	remote_location.country_code	remote_location.region	remote_location.city	remote_location.latitude	remote_location.longitude
+#types	time	string	addr	port	addr	port	string	string	string	enum	enum	string	string	addr	addr	port	count	string	set[enum]	interval	string	string	string	double	double
+1585330242.330476	CV6J1aAiGPccmuXZ5	192.168.1.26	20	192.168.1.104	80	-	-	-	tcp	Possible_Steganography	Possible reserved bits TCP steganography	TCP reserved bits are not equal to zero	192.168.1.26	192.168.1.104	80	-	-	Notice::ACTION_LOG	3600.000000	-	-	-	-	-
+1585330246.496245	CZEJmD1aMYFCmj5lib	192.168.1.26	20	192.168.1.104	80	-	-	-	tcp	Possible_Steganography	Possible reserved bits TCP steganography	TCP reserved bits are not equal to zero	192.168.1.26	192.168.1.104	80	-	-	Notice::ACTION_LOG	3600.000000	-	-	-	-	-
+#close	2020-03-27-13-30-48
