@@ -1,0 +1,13 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	x509
+#open	2020-03-29-10-21-15
+#fields	ts	id	certificate.version	certificate.serial	certificate.subject	certificate.issuer	certificate.not_valid_before	certificate.not_valid_after	certificate.key_alg	certificate.sig_alg	certificate.key_type	certificate.key_length	certificate.exponent	certificate.curve	san.dns	san.uri	san.email	san.ip	basic_constraints.ca	basic_constraints.path_len
+#types	time	string	count	string	string	string	time	time	string	string	string	count	string	string	vector[string]	vector[string]	vector[string]	vector[addr]	bool	count
+1585491675.547387	FeUfbKZvQRGf9GMZ1	3	0317B83EF49CD9069B1437CA69F35840	CN=*.rubiconproject.com,O=The Rubicon Project\\, Inc.,L=Los Angeles,ST=California,C=US	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	1547096400.000000	1610643600.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	*.rubiconproject.com,rubiconproject.com	-	-	-	F	-
+1585491675.547387	FknlbP3mYMmMPTUVmh	3	01FDA3EB6ECA75C888438B724BCFBC91	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US	1362762000.000000	1678294800.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0
+1585491676.423220	Fe0kh3266JacIrUuTj	3	0317B83EF49CD9069B1437CA69F35840	CN=*.rubiconproject.com,O=The Rubicon Project\\, Inc.,L=Los Angeles,ST=California,C=US	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	1547096400.000000	1610643600.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	*.rubiconproject.com,rubiconproject.com	-	-	-	F	-
+1585491676.423220	FDHnWT329j91xVmv7b	3	01FDA3EB6ECA75C888438B724BCFBC91	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US	1362762000.000000	1678294800.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0
+#close	2020-03-29-10-23-00

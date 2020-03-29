@@ -1,6 +1,7 @@
 global old_seq = 0;
 global old_id : count = 0;
 global id_changes_counter = 0;
+global TCP_Urgent = F;
 
 #Add new notice type
 redef enum Notice::Type += { Possible_Steganography };
@@ -73,10 +74,20 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
 	old_id = id;
 	}
 
-#event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string)
-#	{
-#	print flags;
-#	}
+event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string)
+	{
+	print flags;
+	for (i in flags)
+		{
+			if (i == "U")
+				{
+				print "Urgent pointer is on";
+				TCP_Urgent = T;
+				break;
+				}
+		}
+	}
+
 
 event new_packet (c: connection, p: pkt_hdr){
 	if(p ?$ tcp && p$tcp$reserved != 0 ){
@@ -92,4 +103,11 @@ event new_packet (c: connection, p: pkt_hdr){
                         $conn=c,
                         $notice=T]); #check whats going on over here
 	}
+	if(p ?$ tcp){
+	#	print p$tcp;
+		if(p$tcp$urp != 0 && !TCP_Urgent){
+			print "Possibile stego URG flag is 0 and urgent pointer exists";
+		}
+	}
+	TCP_Urgent = F;
 }

@@ -1,0 +1,11 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	weird
+#open	2020-03-29-10-44-29
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
+#types	time	string	addr	port	addr	port	string	string	bool	string
+1585493069.764951	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
+1585493089.885353	-	-	-	-	-	unknown_protocol	2	F	zeek
+#close	2020-03-29-10-44-52
