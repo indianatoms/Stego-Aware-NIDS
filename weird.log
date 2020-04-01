@@ -3,9 +3,10 @@
 #empty_field	(empty)
 #unset_field	-
 #path	weird
-#open	2020-03-29-10-44-29
+#open	2020-04-01-15-27-24
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
 #types	time	string	addr	port	addr	port	string	string	bool	string
-1585493069.764951	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
-1585493089.885353	-	-	-	-	-	unknown_protocol	2	F	zeek
-#close	2020-03-29-10-44-52
+1585769244.562675	CU6mBb1G8OKrIUaIC5	192.168.1.104	45164	172.217.21.238	443	bad_TCP_checksum	-	F	zeek
+1585769251.581184	-	-	-	-	-	unknown_protocol	2	F	zeek
+1585769260.906911	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
+#close	2020-04-01-15-29-06

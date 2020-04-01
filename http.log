@@ -3,9 +3,13 @@
 #empty_field	(empty)
 #unset_field	-
 #path	http
-#open	2020-03-29-06-22-14
+#open	2020-04-01-15-11-27
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	host	uri	referrer	version	user_agent	origin	request_body_len	response_body_len	status_code	status_msg	info_code	info_msg	tags	username	password	proxied	orig_fuids	orig_filenames	orig_mime_types	resp_fuids	resp_filenames	resp_mime_types
 #types	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	count	count	count	string	count	string	set[enum]	string	string	set[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]
-1585477334.609184	CkEMOp3BKIxEU67HEe	192.168.1.104	58014	192.99.200.113	80	1	-	-	-	-	1.1	-	-	0	319	302	Found	-	-	(empty)	-	-	-	-	-	-	FKQ2jw2kLYgCgwGas1	-	text/html
-1585477334.854027	C6aXj04zEKg9NK82l7	192.168.1.104	40052	89.111.47.131	80	1	-	-	-	-	1.1	-	-	0	0	304	Not Modified	-	-	(empty)	-	-	-	-	-	-	-	-	-
-#close	2020-03-29-06-23-17
+1585768287.902441	Cul9E31JBLvr5hmr57	192.168.1.104	58954	157.240.20.35	80	1	-	-	-	-	1.1	-	-	0	0	302	Found	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1585768313.723235	CckfHi15d5b3VLbQ08	192.168.1.104	41316	172.217.21.206	80	1	-	-	-	-	1.1	-	-	0	0	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	-	-	-
+1585768320.215955	CmCZMc1WralLNZoTL3	192.168.1.104	59784	213.180.141.188	80	1	-	-	-	-	1.1	-	-	0	178	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FEi4zpY7wMLWKqEp4	-	text/html
+1585768323.815988	CTjhzv3ftOHlkJnum7	192.168.1.104	36276	212.77.98.9	80	1	-	-	-	-	1.1	-	-	0	162	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FkssN7mWEtg9mozU6	-	text/html
+1585768331.399651	CVtAnv1K6hFWAoo6S1	192.168.1.104	34278	212.77.100.61	80	1	-	-	-	-	1.1	-	-	0	162	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FaErJ62N0fhbfXWk98	-	text/html
+1585768337.052825	C1mqs649J6gdtICGjf	192.168.1.104	43670	151.101.12.81	80	1	-	-	-	-	1.1	-	-	0	228	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FKnIrVcqqF8EbnFB3	-	text/html
+#close	2020-04-01-15-13-25

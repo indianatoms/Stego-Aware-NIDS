@@ -3,13 +3,16 @@
 #empty_field	(empty)
 #unset_field	-
 #path	dns
-#open	2020-03-29-10-44-38
+#open	2020-04-01-15-27-34
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
 #types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
-1585493068.511363	CvPHM24Cy5MEuc7Sz5	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
-1585493068.412922	C2hCFgIykQ3nIJUn	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585493069.610648	C2hCFgIykQ3nIJUn	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585493071.453901	C2hCFgIykQ3nIJUn	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585493075.447422	C2hCFgIykQ3nIJUn	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585493083.434807	C2hCFgIykQ3nIJUn	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-#close	2020-03-29-10-44-52
+1585769244.823143	Coto1i1aXOo151PJYe	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_ssw._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585769260.797711	CILFrnQ1zhQYnEz2j	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585769264.483842	CeJ0bF307t1ncDBEZi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585769265.405198	CeJ0bF307t1ncDBEZi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585769268.477111	CeJ0bF307t1ncDBEZi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585769264.483869	Cud4rPLHijAphCkh8	fe80::18fa:f723:65c9:28a7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585769265.405908	Cud4rPLHijAphCkh8	fe80::18fa:f723:65c9:28a7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585769268.477292	Cud4rPLHijAphCkh8	fe80::18fa:f723:65c9:28a7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585769292.746155	Ckxzl513An688oTIZ5	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+#close	2020-04-01-15-29-06
