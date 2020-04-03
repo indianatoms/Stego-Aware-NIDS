@@ -5,6 +5,9 @@ global TCP_Urgent = F;
 global old_seq_TCP = 0;
 global t: table[addr] of count = {};
 global TCP_seq : table[addr] of count = {};
+global port_count: table[addr] of count = {};
+global addres_port: table[addr] of port = {};
+
 
 #Add new notice type
 redef enum Notice::Type += { Possible_Steganography };
@@ -79,26 +82,6 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
 
 event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string)
 	{
-#	print "----------------------------";
-#	print seq;
-#	if(old_seq_TCP < seq){
-#		TCP_seq_counter += 1;
-#		if(TCP_seq_counter == 30)
-#		{
-#			TCP_seq_counter = 0;
-#		}
-#		print "UP!";
-#	}
-#	else{
-#		TCP_seq_counter -= 1;
-#		print "DOWN!";
-#		if(TCP_seq_counter <= -10)
-#		{
-#			print ("Possbile Steganography");
-#		}
-#	}
-	
-#	print payload;
 	for (i in flags)
 		{
 			if (i == "U")
@@ -136,7 +119,7 @@ event new_packet (c: connection, p: pkt_hdr){
 	}
 
 	if(p ?$ tcp){
-		print p$tcp$seq;
+		print p$tcp;
 		print p$ip$src;
 		if(p$ip$src in t && p$tcp$seq != 0 && p$ip$src != 192.168.1.104)
 		{
@@ -167,6 +150,27 @@ event new_packet (c: connection, p: pkt_hdr){
 			t[p$ip$src] = 1;
 			TCP_seq[p$ip$src] = p$tcp$seq;
 		}
+
+		if(p$ip$src in addres_port){
+			print "same address";
+				if(addres_port[p$ip$src] != p$tcp$sport)
+				{
+					print "new source port for same address";
+					port_count[p$ip$src] += 1;
+					if(port_count[p$ip$src] >= 10){
+						print "possible port stego";
+					}
+				}
+		}	
+		else{
+			print "new address";
+			addres_port[p$ip$src] = p$tcp$sport;
+			port_count[p$ip$src] = 1;
+		}
+			
+
+
+
 	}
 
 	TCP_Urgent = F;

@@ -3,16 +3,44 @@
 #empty_field	(empty)
 #unset_field	-
 #path	dns
-#open	2020-04-01-15-27-34
+#open	2020-04-02-14-26-33
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
 #types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
-1585769244.823143	Coto1i1aXOo151PJYe	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_ssw._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585769260.797711	CILFrnQ1zhQYnEz2j	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585769264.483842	CeJ0bF307t1ncDBEZi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585769265.405198	CeJ0bF307t1ncDBEZi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585769268.477111	CeJ0bF307t1ncDBEZi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585769264.483869	Cud4rPLHijAphCkh8	fe80::18fa:f723:65c9:28a7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585769265.405908	Cud4rPLHijAphCkh8	fe80::18fa:f723:65c9:28a7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585769268.477292	Cud4rPLHijAphCkh8	fe80::18fa:f723:65c9:28a7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1585769292.746155	Ckxzl513An688oTIZ5	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-#close	2020-04-01-15-29-06
+1585851983.364605	C3ocYg1wquv6iODIwl	192.168.1.104	43565	192.168.1.1	53	udp	32771	-	www.googleadservices.com	-	-	-	-	0	NOERROR	F	F	F	T	0	pagead.l.doubleclick.net,172.217.18.98	300.000000,299.000000	F
+1585851983.367101	C3ocYg1wquv6iODIwl	192.168.1.104	43565	192.168.1.1	53	udp	1547	-	www.googleadservices.com	-	-	-	-	0	NOERROR	F	F	F	T	0	pagead.l.doubleclick.net	152.000000	F
+1585851994.687613	C1YcFr1p72LWa5aXs4	192.168.1.104	55899	192.168.1.1	53	udp	8233	-	r6---sn-u2oxu-f5fer.googlevideo.com	-	-	-	-	0	NOERROR	F	F	F	T	0	r6.sn-u2oxu-f5fer.googlevideo.com,46.134.193.81	800.000000,800.000000	F
+1585851994.687634	C1YcFr1p72LWa5aXs4	192.168.1.104	55899	192.168.1.1	53	udp	16690	-	r6---sn-u2oxu-f5fer.googlevideo.com	-	-	-	-	0	NOERROR	F	F	F	T	0	r6.sn-u2oxu-f5fer.googlevideo.com,2a00:f46:0:eb1::11	1504.000000,1791.000000	F
+1585852032.357133	CMOSLU3r4FDWEBRSka	192.168.1.104	34932	192.168.1.1	53	udp	13548	-	aus5.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	balrog-aus5.r53-2.services.mozilla.com,balrog-aus5-noclip.r53-2.services.mozilla.com,balrog-cloudfront.prod.mozaws.net,54.192.230.78,54.192.230.129,54.192.230.51,54.192.230.61	49.000000,49.000000,49.000000,44.000000,44.000000,44.000000,44.000000	F
+1585852032.357133	CMOSLU3r4FDWEBRSka	192.168.1.104	34932	192.168.1.1	53	udp	46835	-	aus5.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	balrog-aus5.r53-2.services.mozilla.com,balrog-aus5-noclip.r53-2.services.mozilla.com,balrog-cloudfront.prod.mozaws.net,2600:9000:20ae:3e00:a:db2a:b380:93a1,2600:9000:20ae:6400:a:db2a:b380:93a1,2600:9000:20ae:6600:a:db2a:b380:93a1,2600:9000:20ae:8e00:a:db2a:b380:93a1,2600:9000:20ae:8c00:a:db2a:b380:93a1,2600:9000:20ae:3400:a:db2a:b380:93a1,2600:9000:20ae:5400:a:db2a:b380:93a1,2600:9000:20ae:c800:a:db2a:b380:93a1	44.000000,44.000000,44.000000,54.000000,54.000000,54.000000,54.000000,54.000000,54.000000,54.000000,54.000000	F
+1585852088.649075	CGmq3N10ErgtYJ5K98	192.168.1.1	5353	224.0.0.251	5353	udp	0	0.102550	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	_mqtt._tcp.local,_ssw._tcp.local	4500.000000,4500.000000	F
+1585852088.771049	CQfIGo2r9Jz7P7CNEh	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1585852089.733242	CGmq3N10ErgtYJ5K98	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852091.677690	CGmq3N10ErgtYJ5K98	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852095.671490	CGmq3N10ErgtYJ5K98	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852103.966033	CGmq3N10ErgtYJ5K98	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852119.736363	Ccp3X54klW5Z7CfQyc	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852151.868529	Co08wL3aN3BToipwck	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852156.689958	CDmpzc3HizubRFxH4a	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852196.002910	CKS3op4M40L3db9V0g	192.168.1.104	44068	192.168.1.1	53	udp	49176	-	i.ytimg.com	-	-	-	-	0	NOERROR	F	F	F	T	0	2a00:1450:4001:825::2016	92.000000	F
+1585852196.002900	CKS3op4M40L3db9V0g	192.168.1.104	44068	192.168.1.1	53	udp	35346	-	i.ytimg.com	-	-	-	-	0	NOERROR	F	F	F	T	0	216.58.208.54	222.000000	F
+1585852268.931895	Ci9rMB4ITHrwnw7vvh	192.168.1.1	5353	224.0.0.251	5353	udp	0	0.001057	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	ssw on funbox._ssw._tcp.local,TXT 19 capabilities=master TXT 13 protocol=mqtt,funbox.local,192.168.1.1,ssw on funbox._mqtt._tcp.local,TXT 31 topics=sah/from/$CN/pair-device,funbox.local,funbox._http._tcp.local,TXT 0 ,funbox.local	4500.000000,4500.000000,120.000000,120.000000,4500.000000,4500.000000,120.000000,4500.000000,4500.000000,120.000000	F
+1585852268.959125	CZtVvq14b398oPQQr1	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1585852283.721211	C6V6b83LrvDcQksaR9	192.168.1.104	53868	192.168.1.1	53	udp	53776	-	services.addons.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	olympia.prod.mozaws.net	15.000000	F
+1585852283.721197	C6V6b83LrvDcQksaR9	192.168.1.104	53868	192.168.1.1	53	udp	54786	-	services.addons.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	olympia.prod.mozaws.net,34.208.117.103,52.39.82.105,35.161.136.160	17.000000,53.000000,53.000000,53.000000	F
+1585852284.436532	Cqya3j2bAqENnFDd1a	192.168.1.104	58356	192.168.1.1	53	udp	42149	-	versioncheck-bg.addons.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	versioncheck.prod.mozaws.net	34.000000	F
+1585852284.477775	Cqya3j2bAqENnFDd1a	192.168.1.104	58356	192.168.1.1	53	udp	24219	-	versioncheck-bg.addons.mozilla.org	-	-	-	-	0	NOERROR	F	F	F	T	0	versioncheck.prod.mozaws.net,52.41.41.102	60.000000,16.000000	F
+1585852269.853276	Ci9rMB4ITHrwnw7vvh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852271.912083	Ci9rMB4ITHrwnw7vvh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852275.723188	Ci9rMB4ITHrwnw7vvh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852283.984304	Ci9rMB4ITHrwnw7vvh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852299.958766	CrtPBY3CVtjQ7Ipxul	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852331.743176	C1ja3y4kDCiEKmSLM7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852325.104902	CadfPl4VA2xjMj0Vsf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852326.108995	CadfPl4VA2xjMj0Vsf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852331.589635	CadfPl4VA2xjMj0Vsf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852332.312286	CadfPl4VA2xjMj0Vsf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852334.221353	CadfPl4VA2xjMj0Vsf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852335.221364	CadfPl4VA2xjMj0Vsf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852335.353822	CadfPl4VA2xjMj0Vsf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1585852338.238524	CadfPl4VA2xjMj0Vsf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+#close	2020-04-02-14-32-19

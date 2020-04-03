@@ -3,8 +3,10 @@
 #empty_field	(empty)
 #unset_field	-
 #path	ssl
-#open	2020-04-01-15-26-57
+#open	2020-04-02-14-25-20
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	cipher	curve	server_name	resumed	last_alert	next_protocol	established	cert_chain_fuids	client_cert_chain_fuids	subject	issuer	client_subject	client_issuer
 #types	time	string	addr	port	addr	port	string	string	string	string	bool	string	string	bool	vector[string]	vector[string]	string	string	string	string
-1585769055.647480	CCCmpc128ENX2vSfG7	192.168.1.104	35734	216.58.206.1	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
-#close	2020-04-01-15-26-57
+1585851915.502393	C4CspK39lYIuoA1Ru4	192.168.1.104	32846	216.58.206.1	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
+1585851946.805705	CKy0yl1MAlntTm6ud	192.168.1.104	44000	172.217.23.162	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
+1585851915.425878	CD20GE29nn1btCZo61	192.168.1.104	32842	216.58.206.1	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
+#close	2020-04-02-14-25-54

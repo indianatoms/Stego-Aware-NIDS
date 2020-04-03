@@ -3,11 +3,24 @@
 #empty_field	(empty)
 #unset_field	-
 #path	files
-#open	2020-04-01-15-12-00
+#open	2020-04-02-14-23-33
 #fields	ts	fuid	tx_hosts	rx_hosts	conn_uids	source	depth	analyzers	mime_type	filename	duration	local_orig	is_orig	seen_bytes	total_bytes	missing_bytes	overflow_bytes	timedout	parent_fuid	md5	sha1	sha256	extracted	extracted_cutoff	extracted_size
 #types	time	string	set[addr]	set[addr]	set[string]	string	count	set[string]	string	string	interval	bool	bool	count	count	count	count	bool	string	string	string	string	string	bool	count
-1585768320.215955	FEi4zpY7wMLWKqEp4	213.180.141.188	192.168.1.104	CmCZMc1WralLNZoTL3	HTTP	0	(empty)	text/html	-	0.000000	-	F	178	178	0	0	F	-	-	-	-	-	-	-
-1585768323.815988	FkssN7mWEtg9mozU6	212.77.98.9	192.168.1.104	CTjhzv3ftOHlkJnum7	HTTP	0	(empty)	text/html	-	0.000000	-	F	162	162	0	0	F	-	-	-	-	-	-	-
-1585768331.399651	FaErJ62N0fhbfXWk98	212.77.100.61	192.168.1.104	CVtAnv1K6hFWAoo6S1	HTTP	0	(empty)	text/html	-	0.000000	-	F	162	162	0	0	F	-	-	-	-	-	-	-
-1585768337.052825	FKnIrVcqqF8EbnFB3	151.101.12.81	192.168.1.104	C1mqs649J6gdtICGjf	HTTP	0	(empty)	text/html	-	0.000000	-	F	228	228	0	0	F	-	-	-	-	-	-	-
-#close	2020-04-01-15-13-25
+1585851813.376920	FYuwJr2LZAGeopleMd	172.217.22.46	192.168.1.104	C702Kq4G4kHpUUvy22	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851822.457402	Flb2Ei3HJRQHt8X8jl	172.217.22.46	192.168.1.104	ChJ1GK2mpPLyIRA217	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851827.573871	FyOpAk2QhOStny0Rqj	172.217.22.46	192.168.1.104	CXC2062PMks8YKtuTb	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851834.170766	FdBija4MWlMgKkOlV6	172.217.22.46	192.168.1.104	CJrRlgZgSKKuOIjp7	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851840.904790	Fv3RGR2DuGe8orYeSc	172.217.22.46	192.168.1.104	CEtxdN3Z0anEZOBxs5	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851845.024892	FSWy121YpkiIbmoyUh	172.217.22.46	192.168.1.104	CnZeY334Q788T6Yas5	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851846.147769	FChvN025Q9kzhht4yd	172.217.22.46	192.168.1.104	CSPs45Bxf4cgLOo2f	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851847.072469	FMxHTi27cCW9G5Ktf	172.217.22.46	192.168.1.104	CmQH9a18MfQNnajDac	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851847.931792	FNVNhXGwZXMwROzrj	172.217.22.46	192.168.1.104	CdQNTj1hXhIu5jvW0g	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851849.278919	Fp7BL12FbBVCJaS437	172.217.22.46	192.168.1.104	ClGJSF1pJOPIoGQL14	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851854.624323	FGbU013cQiwu2opHqk	172.217.22.46	192.168.1.104	C11gQv4oSKIBNEGuJj	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851857.841231	FMPNws2qylOLXtYeCc	172.217.22.46	192.168.1.104	CbE44o29ELrzM6X5qf	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851859.642385	FqWMhidARfLdtVyi2	172.217.22.46	192.168.1.104	CtTGsS1gSCQlzbGAFg	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851861.004348	FtMGPB2RPr65KGicTd	172.217.22.46	192.168.1.104	CQIV8t20IyaUbSvv9	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851862.815443	FrTK2HpSqL3366pa	172.217.23.142	192.168.1.104	CwzSZe2cua7EUJ2mG3	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851865.400244	FqTzKp2licAT9yGu56	172.217.23.142	192.168.1.104	CQJPxG1nyNnXQ50hde	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+1585851866.571742	FJY8tK2XtWbOc7Ggll	172.217.23.142	192.168.1.104	Cd8Jbs3fsVx4Khhdx4	HTTP	0	(empty)	text/html	-	0.000000	-	F	219	219	0	0	F	-	-	-	-	-	-	-
+#close	2020-04-02-14-24-42
