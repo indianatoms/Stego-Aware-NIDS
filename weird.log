@@ -3,34 +3,8 @@
 #empty_field	(empty)
 #unset_field	-
 #path	weird
-#open	2020-04-02-14-26-18
+#open	2020-04-04-06-43-02
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
 #types	time	string	addr	port	addr	port	string	string	bool	string
-1585851978.319118	CDGHeV3riJYYehDIb4	192.168.1.104	46128	216.58.207.68	443	bad_TCP_checksum	-	F	zeek
-1585851983.358577	C3ocYg1wquv6iODIwl	192.168.1.104	43565	192.168.1.1	53	bad_UDP_checksum	-	F	zeek
-1585851983.393641	CD9qfQ2SrfhnhCoNh4	192.168.1.104	52678	172.217.18.98	443	active_connection_reuse	-	F	zeek
-1585851989.183127	CpzMwSwZ9yATrLEA1	192.168.1.104	36572	172.217.16.174	443	above_hole_data_without_any_acks	-	F	zeek
-1585851989.236488	CId55WnIqElA60ckc	192.168.1.104	59620	172.217.23.118	443	truncated_tcp_payload	-	F	zeek
-1585851989.239286	CId55WnIqElA60ckc	192.168.1.104	59620	172.217.23.118	443	above_hole_data_without_any_acks	-	F	zeek
-1585851994.694600	CuXRoG4RmmBaTeNsc7	192.168.1.104	32870	46.134.193.81	443	active_connection_reuse	-	F	zeek
-1585851994.697220	Ck8kCh4sxDzuXmU7lb	192.168.1.104	32872	46.134.193.81	443	active_connection_reuse	-	F	zeek
-1585851994.836708	CpzMwSwZ9yATrLEA1	192.168.1.104	36572	172.217.16.174	443	truncated_tcp_payload	-	F	zeek
-1585851995.050128	CgxR4z1P8zsYQXv5X5	192.168.1.104	32872	46.134.193.81	443	above_hole_data_without_any_acks	-	F	zeek
-1585851995.052505	CgxtA5ixPmO9w8Gtc	192.168.1.104	32870	46.134.193.81	443	above_hole_data_without_any_acks	-	F	zeek
-1585851995.058907	CgxtA5ixPmO9w8Gtc	192.168.1.104	32870	46.134.193.81	443	truncated_tcp_payload	-	F	zeek
-1585851995.103697	CgxR4z1P8zsYQXv5X5	192.168.1.104	32872	46.134.193.81	443	truncated_tcp_payload	-	F	zeek
-1585851996.130623	CMc7V33Y0QuosvJXd5	192.168.1.104	32844	216.58.206.1	443	above_hole_data_without_any_acks	-	F	zeek
-1585852000.099064	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
-1585852010.782714	-	-	-	-	-	unknown_protocol	2	F	zeek
-1585852032.363896	CIXwF03eNy4cAdRhr2	192.168.1.104	55622	54.192.230.78	443	active_connection_reuse	-	F	zeek
-1585852196.029538	CBoGjD2leZIZDQLpic	192.168.1.104	52666	216.58.208.54	443	active_connection_reuse	-	F	zeek
-1585852254.409848	CyMym13nZxZLLf1Tli	192.168.1.104	52666	216.58.208.54	443	above_hole_data_without_any_acks	-	F	zeek
-1585852283.919275	CpF4pl26aVpBKmEsta	192.168.1.104	58994	34.208.117.103	443	active_connection_reuse	-	F	zeek
-1585852283.921421	Caaccz1XvMF1NPge4b	192.168.1.104	58996	34.208.117.103	443	active_connection_reuse	-	F	zeek
-1585852284.673256	CjVkCs4PjfCasueFD	192.168.1.104	58766	52.41.41.102	443	active_connection_reuse	-	F	zeek
-1585852284.673405	CiBybm32kkexotRXV8	192.168.1.104	58768	52.41.41.102	443	active_connection_reuse	-	F	zeek
-1585852284.676333	Cdxbg23VNboW1DoD5a	192.168.1.104	58774	52.41.41.102	443	active_connection_reuse	-	F	zeek
-1585852284.676447	CwLpNGSjYIHMBTzz8	192.168.1.104	58772	52.41.41.102	443	active_connection_reuse	-	F	zeek
-1585852284.676570	CVKJCQS3MpTOFUMjf	192.168.1.104	58770	52.41.41.102	443	active_connection_reuse	-	F	zeek
-1585852284.676651	CfCL592R4zq70qVGEf	192.168.1.104	58776	52.41.41.102	443	active_connection_reuse	-	F	zeek
-#close	2020-04-02-14-32-19
+1585996982.012049	-	-	-	-	-	unknown_protocol	2	F	zeek
+#close	2020-04-04-06-43-05

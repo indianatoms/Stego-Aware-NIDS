@@ -3,11 +3,9 @@
 #empty_field	(empty)
 #unset_field	-
 #path	x509
-#open	2020-04-01-14-19-21
+#open	2020-04-04-05-48-29
 #fields	ts	id	certificate.version	certificate.serial	certificate.subject	certificate.issuer	certificate.not_valid_before	certificate.not_valid_after	certificate.key_alg	certificate.sig_alg	certificate.key_type	certificate.key_length	certificate.exponent	certificate.curve	san.dns	san.uri	san.email	san.ip	basic_constraints.ca	basic_constraints.path_len
 #types	time	string	count	string	string	string	time	time	string	string	string	count	string	string	vector[string]	vector[string]	vector[string]	vector[addr]	bool	count
-1585765161.459722	FxVw153MYEJFPv9da	3	0317B83EF49CD9069B1437CA69F35840	CN=*.rubiconproject.com,O=The Rubicon Project\\, Inc.,L=Los Angeles,ST=California,C=US	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	1547096400.000000	1610643600.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	*.rubiconproject.com,rubiconproject.com	-	-	-	F	-
-1585765161.459722	F67gFq1RUZzrmVLtY9	3	01FDA3EB6ECA75C888438B724BCFBC91	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US	1362762000.000000	1678294800.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0
-1585765162.180120	FJrNiup96P0TPaSge	3	0317B83EF49CD9069B1437CA69F35840	CN=*.rubiconproject.com,O=The Rubicon Project\\, Inc.,L=Los Angeles,ST=California,C=US	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	1547096400.000000	1610643600.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	*.rubiconproject.com,rubiconproject.com	-	-	-	F	-
-1585765162.180120	FNDVQKJK9cgEY5Qj7	3	01FDA3EB6ECA75C888438B724BCFBC91	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US	1362762000.000000	1678294800.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0
-#close	2020-04-01-14-20-06
+1585993709.571576	FpWLT9YDiwqx6Ifyh	3	02397446BBF41C486B9863A8540B19DD	CN=aus5.mozilla.org,OU=Cloud Services,O=Mozilla Corporation,L=Mountain View,ST=California,C=US	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	1561608000.000000	1623859200.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	aus5.mozilla.org,aus-api.mozilla.org,balrog-cloudfront.prod.mozaws.net	-	-	-	F	-
+1585993709.571576	Fzj7Fy1FgSH8jOhFnl	3	01FDA3EB6ECA75C888438B724BCFBC91	CN=DigiCert SHA2 Secure Server CA,O=DigiCert Inc,C=US	CN=DigiCert Global Root CA,OU=www.digicert.com,O=DigiCert Inc,C=US	1362762000.000000	1678294800.000000	rsaEncryption	sha256WithRSAEncryption	rsa	2048	65537	-	-	-	-	-	T	0
+#close	2020-04-04-06-00-11

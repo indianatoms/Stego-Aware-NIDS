@@ -3,8 +3,8 @@
 #empty_field	(empty)
 #unset_field	-
 #path	packet_filter
-#open	2020-04-02-14-26-16
+#open	2020-04-04-06-42-55
 #fields	ts	node	filter	init	success
 #types	time	string	string	bool	bool
-1585851976.864646	zeek	ip or not ip	T	T
-#close	2020-04-02-14-32-19
+1585996975.644665	zeek	ip or not ip	T	T
+#close	2020-04-04-06-43-05

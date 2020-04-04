@@ -3,24 +3,8 @@
 #empty_field	(empty)
 #unset_field	-
 #path	http
-#open	2020-04-02-14-23-33
+#open	2020-04-04-06-31-57
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	host	uri	referrer	version	user_agent	origin	request_body_len	response_body_len	status_code	status_msg	info_code	info_msg	tags	username	password	proxied	orig_fuids	orig_filenames	orig_mime_types	resp_fuids	resp_filenames	resp_mime_types
 #types	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	count	count	count	string	count	string	set[enum]	string	string	set[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]
-1585851813.376920	C702Kq4G4kHpUUvy22	192.168.1.104	55604	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FYuwJr2LZAGeopleMd	-	text/html
-1585851822.457402	ChJ1GK2mpPLyIRA217	192.168.1.104	55606	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	Flb2Ei3HJRQHt8X8jl	-	text/html
-1585851827.573871	CXC2062PMks8YKtuTb	192.168.1.104	55608	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FyOpAk2QhOStny0Rqj	-	text/html
-1585851834.170766	CJrRlgZgSKKuOIjp7	192.168.1.104	55610	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FdBija4MWlMgKkOlV6	-	text/html
-1585851840.904790	CEtxdN3Z0anEZOBxs5	192.168.1.104	55612	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	Fv3RGR2DuGe8orYeSc	-	text/html
-1585851845.024892	CnZeY334Q788T6Yas5	192.168.1.104	55614	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FSWy121YpkiIbmoyUh	-	text/html
-1585851846.147769	CSPs45Bxf4cgLOo2f	192.168.1.104	55616	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FChvN025Q9kzhht4yd	-	text/html
-1585851847.072469	CmQH9a18MfQNnajDac	192.168.1.104	55618	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FMxHTi27cCW9G5Ktf	-	text/html
-1585851847.931792	CdQNTj1hXhIu5jvW0g	192.168.1.104	55620	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FNVNhXGwZXMwROzrj	-	text/html
-1585851849.278919	ClGJSF1pJOPIoGQL14	192.168.1.104	55622	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	Fp7BL12FbBVCJaS437	-	text/html
-1585851854.624323	C11gQv4oSKIBNEGuJj	192.168.1.104	55624	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FGbU013cQiwu2opHqk	-	text/html
-1585851857.841231	CbE44o29ELrzM6X5qf	192.168.1.104	55626	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FMPNws2qylOLXtYeCc	-	text/html
-1585851859.642385	CtTGsS1gSCQlzbGAFg	192.168.1.104	55628	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FqWMhidARfLdtVyi2	-	text/html
-1585851861.004348	CQIV8t20IyaUbSvv9	192.168.1.104	55630	172.217.22.46	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FtMGPB2RPr65KGicTd	-	text/html
-1585851862.815443	CwzSZe2cua7EUJ2mG3	192.168.1.104	48066	172.217.23.142	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FrTK2HpSqL3366pa	-	text/html
-1585851865.400244	CQJPxG1nyNnXQ50hde	192.168.1.104	48068	172.217.23.142	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FqTzKp2licAT9yGu56	-	text/html
-1585851866.571742	Cd8Jbs3fsVx4Khhdx4	192.168.1.104	48070	172.217.23.142	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FJY8tK2XtWbOc7Ggll	-	text/html
-#close	2020-04-02-14-24-42
+1585996317.694718	CWH2Ls2J0r13Or8fG9	192.168.1.104	49364	172.217.16.174	80	1	-	-	-	-	1.1	-	-	0	219	301	Moved Permanently	-	-	(empty)	-	-	-	-	-	-	FaHupC2wgVQ1hGoof4	-	text/html
+#close	2020-04-04-06-32-24

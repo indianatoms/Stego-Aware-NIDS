@@ -3,10 +3,12 @@
 #empty_field	(empty)
 #unset_field	-
 #path	ssl
-#open	2020-04-02-14-25-20
+#open	2020-04-04-05-48-14
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	version	cipher	curve	server_name	resumed	last_alert	next_protocol	established	cert_chain_fuids	client_cert_chain_fuids	subject	issuer	client_subject	client_issuer
 #types	time	string	addr	port	addr	port	string	string	string	string	bool	string	string	bool	vector[string]	vector[string]	string	string	string	string
-1585851915.502393	C4CspK39lYIuoA1Ru4	192.168.1.104	32846	216.58.206.1	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
-1585851946.805705	CKy0yl1MAlntTm6ud	192.168.1.104	44000	172.217.23.162	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
-1585851915.425878	CD20GE29nn1btCZo61	192.168.1.104	32842	216.58.206.1	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
-#close	2020-04-02-14-25-54
+1585993689.744495	C6RR9TuHGrpuNxNHk	192.168.1.104	44340	91.228.196.24	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	-	-	F	-	h2	F	-	-	-	-	-	-
+1585993689.760314	Cgvf0r1ILWgH2Apwqf	192.168.1.104	57192	172.217.16.168	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
+1585993709.568884	CKExli2wFKh9qxoTWj	192.168.1.104	42186	54.192.230.61	443	TLSv12	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256	secp256r1	-	F	-	h2	F	FpWLT9YDiwqx6Ifyh,Fzj7Fy1FgSH8jOhFnl	(empty)	-	-	-	-
+1585993689.764450	CQDBsG4yZ4JPHVZBIi	192.168.1.104	39666	172.217.21.195	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
+1585993696.671174	C8wW7NmHNYRvXMSJ7	192.168.1.104	48428	172.217.0.163	443	TLSv13	TLS_AES_128_GCM_SHA256	x25519	-	F	-	-	F	-	-	-	-	-	-
+#close	2020-04-04-06-00-11
