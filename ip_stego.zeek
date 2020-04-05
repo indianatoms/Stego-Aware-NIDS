@@ -24,7 +24,7 @@ event new_packet (c: connection, p: pkt_hdr){
                                              print "check if second change of value occured in last minute";
                                              if(TOS_timer[p$ip$src] - network_time() < 1min){
                                                  TOS_counter[p$ip$src] += 1;
-                                                 if(TOS_counter[p$ip$src] > 30)
+                                                 if(TOS_counter[p$ip$src] > 20)
                                                  {
                                                      print "possible stego or someone is using VoIP too much :-)", TOS_counter[p$ip$src];
                                                  }               
