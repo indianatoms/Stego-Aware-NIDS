@@ -3,9 +3,34 @@
 #empty_field	(empty)
 #unset_field	-
 #path	weird
-#open	2020-04-05-14-53-16
+#open	2020-04-07-11-20-11
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
 #types	time	string	addr	port	addr	port	string	string	bool	string
-1586112795.859479	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
-1586112810.389151	-	-	-	-	-	unknown_protocol	2	F	zeek
-#close	2020-04-05-15-00-17
+1586251211.971644	-	-	-	-	-	unknown_protocol	2	F	zeek
+1586251213.475709	C6uyA14ElDpiFNKkp3	192.168.1.26	35566	99.83.135.170	443	bad_TCP_checksum	-	F	zeek
+1586251215.745785	C2M56W13zNu6WT7kIe	192.168.1.26	39082	185.33.223.216	443	active_connection_reuse	-	F	zeek
+1586251215.752972	CTDsynNJy85QQ2kZb	192.168.1.26	39086	185.33.223.216	443	active_connection_reuse	-	F	zeek
+1586251215.760248	CLVyh94HVYC9oU8ZXg	192.168.1.26	33342	178.162.133.150	443	active_connection_reuse	-	F	zeek
+1586251215.839440	CLFY7j4JBhIyvhh4el	192.168.1.26	37992	52.44.186.244	443	active_connection_reuse	-	F	zeek
+1586251215.977339	CqKhrgmVbDUcuKLi8	192.168.1.26	46029	192.168.1.1	53	bad_UDP_checksum	-	F	zeek
+1586251215.997953	Cxrjmd2z0lcRgApERe	192.168.1.26	33892	3.127.95.92	443	active_connection_reuse	-	F	zeek
+1586251216.009232	CAoMVf4npAyn85yoc2	192.168.1.26	59160	172.217.18.106	443	active_connection_reuse	-	F	zeek
+1586251216.089213	CvvxEV1YqY5mWpWbrd	192.168.1.26	37994	52.44.186.244	443	active_connection_reuse	-	F	zeek
+1586251226.127920	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
+1586251239.573584	C8w9lU1nBM6tZVmwZ7	192.168.1.26	35724	99.83.135.170	443	active_connection_reuse	-	F	zeek
+1586251246.245637	Chcnhf3Q5Ve9mlTZji	192.168.1.26	38284	185.33.223.218	443	active_connection_reuse	-	F	zeek
+1586251246.245672	CQOhv93pz5Ri7rFGPc	192.168.1.26	38282	185.33.223.218	443	active_connection_reuse	-	F	zeek
+1586251246.271765	CYf0wj1DDmHJfWKZm5	192.168.1.26	33362	178.162.133.150	443	active_connection_reuse	-	F	zeek
+1586251246.336483	CetatJ1xPNiWDYoNX5	192.168.1.26	45422	52.54.138.161	443	active_connection_reuse	-	F	zeek
+1586251246.502384	CRSVCMvJCmpWmAdE8	192.168.1.26	52950	54.93.119.217	443	active_connection_reuse	-	F	zeek
+1586251246.588587	CbzBLZ1H9PRi7tidZ2	192.168.1.26	45426	52.54.138.161	443	active_connection_reuse	-	F	zeek
+1586251276.747247	CXKOJ24Hdui1yTfVIc	192.168.1.26	47274	213.19.162.61	443	active_connection_reuse	-	F	zeek
+1586251276.752048	C8ts1G2oE5PgaTIB29	192.168.1.26	33368	178.162.133.150	443	active_connection_reuse	-	F	zeek
+1586251276.752102	CCDL0l4lezbm4LYad	192.168.1.26	38300	185.33.223.218	443	active_connection_reuse	-	F	zeek
+1586251276.754394	COkrQp4QPZ1O4ZfDQ3	192.168.1.26	38302	185.33.223.218	443	active_connection_reuse	-	F	zeek
+1586251276.833685	CTElWA2NrKvhpq068j	192.168.1.26	45434	52.54.138.161	443	active_connection_reuse	-	F	zeek
+1586251276.984865	CuKMf43cr4LpwpPrQ	192.168.1.26	52962	54.93.119.217	443	active_connection_reuse	-	F	zeek
+1586251277.008966	CdbQZqA3sg8NdvSFl	192.168.1.26	38308	185.33.223.218	443	active_connection_reuse	-	F	zeek
+1586251277.078489	C37D5nFn7NTEGGIte	192.168.1.26	45442	52.54.138.161	443	active_connection_reuse	-	F	zeek
+1586251277.517617	CdVbs04OQzvaOhiIp2	192.168.1.26	49182	172.217.21.194	443	above_hole_data_without_any_acks	-	F	zeek
+#close	2020-04-07-11-21-24

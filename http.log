@@ -3,8 +3,8 @@
 #empty_field	(empty)
 #unset_field	-
 #path	http
-#open	2020-04-05-13-18-53
+#open	2020-04-05-13-39-02
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	trans_depth	method	host	uri	referrer	version	user_agent	origin	request_body_len	response_body_len	status_code	status_msg	info_code	info_msg	tags	username	password	proxied	orig_fuids	orig_filenames	orig_mime_types	resp_fuids	resp_filenames	resp_mime_types
 #types	time	string	addr	port	addr	port	count	string	string	string	string	string	string	string	count	count	count	string	count	string	set[enum]	string	string	set[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]	vector[string]
-1586085533.985762	CcCk6j43c2eDnb6WXa	192.168.1.19	54908	2.18.212.97	80	1	-	-	-	-	1.1	-	-	0	8891	200	OK	-	-	(empty)	-	-	-	-	-	-	FfAkA52C8Iq5s3x4R6	-	application/xml
-#close	2020-04-05-13-30-42
+1586086742.776600	CyoJ9c45w3aQKD9m99	192.168.1.26	36242	93.184.220.29	80	1	-	-	-	-	1.1	-	-	0	471	200	OK	-	-	(empty)	-	-	-	-	-	-	FqYKii2BCNW1APr0bl	-	application/ocsp-response
+1586100515.070626	Cv4qSQ16F8m8zF7BN5	192.168.1.26	53426	172.217.18.174	80	1	-	-	-	-	1.1	-	-	0	457	302	Found	-	-	(empty)	-	-	-	-	-	-	FKW7sBTSDVSrEZpQ8	-	text/html

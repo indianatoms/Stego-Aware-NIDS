@@ -3,33 +3,22 @@
 #empty_field	(empty)
 #unset_field	-
 #path	dns
-#open	2020-04-05-14-53-27
+#open	2020-04-07-11-20-24
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
 #types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
-1586112797.487468	C7i9Zs1BOOj4bWQvqh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112867.221131	CaXb2r4QMJ24RvJGB9	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112914.733720	CBOLRZ2rEh4isDihg3	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
-1586112914.939693	CYz9e41Fxjdz3xIiNa	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
-1586112914.939995	CymmdL15iyOG6HRvX4	fe80::14a4:49e4:230b:d5c6	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
-1586112914.633150	Cdcutu2V0VRlp8rHL9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112915.554553	Cdcutu2V0VRlp8rHL9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112917.704804	Cdcutu2V0VRlp8rHL9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112921.698368	Cdcutu2V0VRlp8rHL9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112929.685551	Cdcutu2V0VRlp8rHL9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112945.659595	ClfM0w4SsSUMf8kRsh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112977.301722	Cl6UG31tQaf8iRrsz6	fe80::14a4:49e4:230b:d5c6	5353	ff02::fb	5353	udp	0	-	_adisk._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112977.608662	CGnJG3TWPL5xA5Z34	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112977.302139	CUgfksYkP1xSuPSFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_adisk._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586112987.131623	CUgfksYkP1xSuPSFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586113094.700849	Cti50nEZcwvtBgHbd	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
-1586113094.992309	CJymzA3OeZMzE5gIW1	fe80::14a4:49e4:230b:d5c6	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
-1586113094.992728	C6m8TU18GgYcCA6S8a	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
-1586113107.246702	CdUn2w2g7qmOZMlzve	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586113094.652237	CVUN9n2KRQ4BCxLNgb	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586113095.573624	CVUN9n2KRQ4BCxLNgb	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586113097.724019	CVUN9n2KRQ4BCxLNgb	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586113101.717703	CVUN9n2KRQ4BCxLNgb	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586113109.704930	CVUN9n2KRQ4BCxLNgb	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586113125.679373	CNg8Nd2s0cX9jiO7pk	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586113157.627561	CatUe13bbg57xO1ox5	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-#close	2020-04-05-15-00-17
+1586251214.533796	CzzgFI2Bktone9CTPg	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1586251214.534374	CAWGHY16ocoyfcf5v7	fe80::107c:b821:f678:fdc7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1586251215.979812	CqKhrgmVbDUcuKLi8	192.168.1.26	46029	192.168.1.1	53	udp	44907	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.18.106	88.000000	F
+1586251239.559274	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	12168	-	capi.grammarly.com	-	-	-	-	0	NOERROR	F	F	F	T	0	capi.core-prod.grammarlyaws.com,99.83.135.170,75.2.53.94	284.000000,286.000000,286.000000	F
+1586251246.231148	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	40169	-	apex.go.sonobi.com	-	-	-	-	0	NOERROR	F	F	F	T	0	ams-1-apex.go.sonobi.com,178.162.133.150	300.000000,864.000000	F
+1586251246.478565	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	28628	-	btlr.sharethrough.com	-	-	-	-	0	NOERROR	F	F	F	T	0	btlr-ecs-eu-central-1.sharethrough.com,54.93.119.217,3.126.224.165,52.59.41.102,52.58.195.54,35.158.189.107,3.127.95.92	55.000000,3.000000,3.000000,3.000000,3.000000,3.000000,3.000000	F
+1586251246.221373	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	14539	-	prebid.deepintent.com	-	-	-	-	0	NOERROR	F	F	F	T	0	52.54.138.161,52.44.186.244,52.20.173.218,34.201.203.209,3.218.101.84,54.236.91.78,52.201.22.120,52.73.115.35	179.000000,179.000000,179.000000,179.000000,179.000000,179.000000,179.000000,179.000000	F
+1586251246.217279	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	18108	-	ib.adnxs.com	-	-	-	-	0	NOERROR	F	F	F	T	0	g.geogslb.com,ib.anycast.adnxs.com,185.33.223.218,185.33.221.14,185.33.220.240,185.33.223.210,185.33.223.202,185.33.223.221,185.33.223.204,185.33.223.216	40219.000000,2810.000000,217.000000,217.000000,217.000000,217.000000,217.000000,217.000000,217.000000,217.000000	F
+1586251255.850148	CRZ18D3dPRWlW6Gv7e	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1586251255.722851	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1586251256.728634	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1586251258.727921	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1586251262.732941	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1586251270.742182	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1586251276.714463	ChNt5r4V5Oo7v7h4mj	192.168.1.26	46029	192.168.1.1	53	udp	52328	-	fastlane.rubiconproject.com	-	-	-	-	0	NOERROR	F	F	F	T	0	optimized-by.rubiconproject.net.akadns.net,perf-optimized-by.rubiconproject.net.akadns.net,213.19.162.61,213.19.162.21,213.19.162.31,213.19.162.41,213.19.162.51	320.000000,320.000000,360.000000,360.000000,360.000000,360.000000,360.000000	F
+#close	2020-04-07-11-21-24
