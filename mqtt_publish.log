@@ -1,0 +1,12 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	mqtt_publish
+#open	2020-04-18-11-40-15
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	from_client	retain	qos	status	topic	payload	payload_len
+#types	time	string	addr	port	addr	port	bool	bool	string	string	string	string	count
+1587202815.359625	CorbnAB3yWOIwPh76	192.168.1.107	49790	192.168.1.26	1883	T	F	at most once	ok	test/topic	xd	2
+1587203144.641168	COoxFZ35UiuwuQ5pa3	192.168.1.107	49806	192.168.1.26	1883	T	F	at most once	ok	test/topic	xd	2
+1587203479.819678	CoLbDjFEaIyP8xc83	192.168.1.107	49818	192.168.1.26	1883	T	F	at most once	ok	test/topic	dobry grycan	12
+#close	2020-04-18-15-19-29

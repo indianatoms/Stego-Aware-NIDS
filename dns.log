@@ -3,22 +3,828 @@
 #empty_field	(empty)
 #unset_field	-
 #path	dns
-#open	2020-04-07-11-20-24
+#open	2020-04-18-11-40-32
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
 #types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
-1586251214.533796	CzzgFI2Bktone9CTPg	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586251214.534374	CAWGHY16ocoyfcf5v7	fe80::107c:b821:f678:fdc7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586251215.979812	CqKhrgmVbDUcuKLi8	192.168.1.26	46029	192.168.1.1	53	udp	44907	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.18.106	88.000000	F
-1586251239.559274	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	12168	-	capi.grammarly.com	-	-	-	-	0	NOERROR	F	F	F	T	0	capi.core-prod.grammarlyaws.com,99.83.135.170,75.2.53.94	284.000000,286.000000,286.000000	F
-1586251246.231148	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	40169	-	apex.go.sonobi.com	-	-	-	-	0	NOERROR	F	F	F	T	0	ams-1-apex.go.sonobi.com,178.162.133.150	300.000000,864.000000	F
-1586251246.478565	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	28628	-	btlr.sharethrough.com	-	-	-	-	0	NOERROR	F	F	F	T	0	btlr-ecs-eu-central-1.sharethrough.com,54.93.119.217,3.126.224.165,52.59.41.102,52.58.195.54,35.158.189.107,3.127.95.92	55.000000,3.000000,3.000000,3.000000,3.000000,3.000000,3.000000	F
-1586251246.221373	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	14539	-	prebid.deepintent.com	-	-	-	-	0	NOERROR	F	F	F	T	0	52.54.138.161,52.44.186.244,52.20.173.218,34.201.203.209,3.218.101.84,54.236.91.78,52.201.22.120,52.73.115.35	179.000000,179.000000,179.000000,179.000000,179.000000,179.000000,179.000000,179.000000	F
-1586251246.217279	Cm9rgO2cPKcGIpBnBd	192.168.1.26	46029	192.168.1.1	53	udp	18108	-	ib.adnxs.com	-	-	-	-	0	NOERROR	F	F	F	T	0	g.geogslb.com,ib.anycast.adnxs.com,185.33.223.218,185.33.221.14,185.33.220.240,185.33.223.210,185.33.223.202,185.33.223.221,185.33.223.204,185.33.223.216	40219.000000,2810.000000,217.000000,217.000000,217.000000,217.000000,217.000000,217.000000,217.000000,217.000000	F
-1586251255.850148	CRZ18D3dPRWlW6Gv7e	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
-1586251255.722851	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586251256.728634	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586251258.727921	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586251262.732941	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586251270.742182	ClcnK53ZwhxujDKrm9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1586251276.714463	ChNt5r4V5Oo7v7h4mj	192.168.1.26	46029	192.168.1.1	53	udp	52328	-	fastlane.rubiconproject.com	-	-	-	-	0	NOERROR	F	F	F	T	0	optimized-by.rubiconproject.net.akadns.net,perf-optimized-by.rubiconproject.net.akadns.net,213.19.162.61,213.19.162.21,213.19.162.31,213.19.162.41,213.19.162.51	320.000000,320.000000,360.000000,360.000000,360.000000,360.000000,360.000000	F
-#close	2020-04-07-11-21-24
+1587202822.908446	CprC944RkMXgw3ujha	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202935.836269	C03iUk10rjhEOWUzUl	fe80::5872:fc63:5759:9eeb	59532	ff02::1:3	5355	udp	14614	-	wpad	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1587202935.928487	C03iUk10rjhEOWUzUl	fe80::5872:fc63:5759:9eeb	59532	ff02::1:3	5355	udp	14614	-	wpad	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1587202935.836407	CaqVIl1wPDUUz5Kenb	192.168.1.107	52791	224.0.0.252	5355	udp	14614	-	wpad	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1587202935.928600	CaqVIl1wPDUUz5Kenb	192.168.1.107	52791	224.0.0.252	5355	udp	14614	-	wpad	1	C_INTERNET	1	A	-	-	F	F	F	F	0	-	-	F
+1587202940.164564	CEAh0s3kWdfiWChDLe	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587202936.136811	CxXG9fIrS1iWgbuV6	192.168.1.107	137	192.168.1.255	137	udp	42971	-	WPAD	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1587202936.893541	CxXG9fIrS1iWgbuV6	192.168.1.107	137	192.168.1.255	137	udp	42971	-	WPAD	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1587202937.651736	CxXG9fIrS1iWgbuV6	192.168.1.107	137	192.168.1.255	137	udp	42971	-	WPAD	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1587202955.470362	CCxiBr3neHJMp6HVKb	192.168.1.19	50317	192.168.1.1	53	udp	37692	-	web.facebook.com	-	-	-	-	0	NOERROR	F	F	F	T	0	star.facebook.com,star.c10r.facebook.com,31.13.92.10	2400.000000,2400.000000,35.000000	F
+1587202955.470609	CY0QFT1EDgyhUhYBi9	192.168.1.19	51023	192.168.1.1	53	udp	7037	-	edge-mqtt.facebook.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mqtt.c10r.facebook.com,185.60.216.11	2548.000000,58.000000	F
+1587202939.932259	ChBc391nIQk14XgDz2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202940.933292	ChBc391nIQk14XgDz2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202942.935355	ChBc391nIQk14XgDz2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202946.940450	ChBc391nIQk14XgDz2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202954.942454	ChBc391nIQk14XgDz2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202970.947773	CYSscT2VvNBOi2ulwf	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202953.594846	CNAgfs4j4C0GW2BeKk	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202954.619792	CNAgfs4j4C0GW2BeKk	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202957.335872	CNAgfs4j4C0GW2BeKk	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202957.675870	CNAgfs4j4C0GW2BeKk	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202966.641545	CNAgfs4j4C0GW2BeKk	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202953.595622	CN6vGfbJH9bN80IAl	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202954.620759	CN6vGfbJH9bN80IAl	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202957.336535	CN6vGfbJH9bN80IAl	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202957.676790	CN6vGfbJH9bN80IAl	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202966.642337	CN6vGfbJH9bN80IAl	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587202999.284560	CAqQgs4h55lI8qZer4	192.168.1.26	55006	192.168.1.1	53	udp	24592	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.99,52.84.194.33,52.84.194.229,52.84.194.64	15.000000,15.000000,15.000000,15.000000	F
+1587203002.981330	CuTPiMxcquplu84b2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203040.685974	C4UAUi3hzDuYBm0wu7	192.168.1.26	55006	192.168.1.1	53	udp	36381	-	capi.grammarly.com	-	-	-	-	0	NOERROR	F	F	F	T	0	capi.core-prod.grammarlyaws.com,99.83.135.170,75.2.53.94	167.000000,89.000000,89.000000	F
+1587203040.417091	C4UAUi3hzDuYBm0wu7	192.168.1.26	55006	192.168.1.1	53	udp	38051	-	www.gstatic.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.23.131	174.000000	F
+1587203081.664985	CcUri4eQc89hDnCHe	192.168.1.26	55006	192.168.1.1	53	udp	39429	-	pypi.org	-	-	-	-	0	NOERROR	F	F	F	T	0	2a04:4e42::223,2a04:4e42:400::223,2a04:4e42:200::223,2a04:4e42:600::223	64323.000000,64323.000000,64323.000000,64323.000000	F
+1587203081.965079	CcUri4eQc89hDnCHe	192.168.1.26	55006	192.168.1.1	53	udp	35020	-	files.pythonhosted.org	-	-	-	-	0	NOERROR	F	F	F	T	0	dualstack.r.ssl.global.fastly.net,2a04:4e42:1b::319	53131.000000,20.000000	F
+1587203083.707877	CcUri4eQc89hDnCHe	192.168.1.26	55006	192.168.1.1	53	udp	59571	-	pypi.org	-	-	-	-	0	NOERROR	F	F	F	T	0	2a04:4e42:600::223,2a04:4e42:200::223,2a04:4e42:400::223,2a04:4e42::223	64321.000000,64321.000000,64321.000000,64321.000000	F
+1587203081.984295	CcUri4eQc89hDnCHe	192.168.1.26	55006	192.168.1.1	53	udp	3850	-	files.pythonhosted.org	-	-	-	-	0	NOERROR	F	F	F	T	0	dualstack.r.ssl.global.fastly.net,151.101.13.63	53131.000000,30.000000	F
+1587203083.707553	CcUri4eQc89hDnCHe	192.168.1.26	55006	192.168.1.1	53	udp	57927	-	pypi.org	-	-	-	-	0	NOERROR	F	F	F	T	0	151.101.64.223,151.101.0.223,151.101.128.223,151.101.192.223	21503.000000,21503.000000,21503.000000,21503.000000	F
+1587203081.662222	CcUri4eQc89hDnCHe	192.168.1.26	55006	192.168.1.1	53	udp	42068	-	pypi.org	-	-	-	-	0	NOERROR	F	F	F	T	0	151.101.0.223,151.101.128.223,151.101.192.223,151.101.64.223	21505.000000,21505.000000,21505.000000,21505.000000	F
+1587203086.597981	CSpKyy2xtya1c5rVA6	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203087.605565	CSpKyy2xtya1c5rVA6	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203090.613069	CSpKyy2xtya1c5rVA6	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203099.635688	CSpKyy2xtya1c5rVA6	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203086.597128	CFCzRM1bCLW59zLFW7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203087.604720	CFCzRM1bCLW59zLFW7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203090.611322	CFCzRM1bCLW59zLFW7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203099.634870	CFCzRM1bCLW59zLFW7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203120.010264	Cl6t3W2gNjUUMI6r2a	192.168.1.1	5353	224.0.0.251	5353	udp	0	0.073818	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	_mqtt._tcp.local,_ssw._tcp.local	4500.000000,4500.000000	F
+1587203120.097984	CqM4XV18KQRZrCgwXj	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587203121.012404	Cl6t3W2gNjUUMI6r2a	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203123.014349	Cl6t3W2gNjUUMI6r2a	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203127.019325	Cl6t3W2gNjUUMI6r2a	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203135.028680	Cl6t3W2gNjUUMI6r2a	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203151.040718	Cucxv72RVsfiF2pJ4j	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203183.042645	CwWpqU2D3J3FcznZtc	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203181.753466	CaEsIR2yvtuzlJaoG4	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203182.764544	CaEsIR2yvtuzlJaoG4	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203185.774922	CaEsIR2yvtuzlJaoG4	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203181.752673	CHX6V92ActWTuYG5r8	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203182.763750	CHX6V92ActWTuYG5r8	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203185.774399	CHX6V92ActWTuYG5r8	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203216.091973	CV9lQvgjn992bUPHd	192.168.1.26	55006	192.168.1.1	53	udp	44751	-	assets.grammarly.com	-	-	-	-	0	NOERROR	F	F	F	T	0	d10zdin3c2kqf3.cloudfront.net,54.192.230.86,54.192.230.91,54.192.230.37,54.192.230.88	300.000000,60.000000,60.000000,60.000000,60.000000	F
+1587203216.108710	CV9lQvgjn992bUPHd	192.168.1.26	55006	192.168.1.1	53	udp	63011	-	gnar.grammarly.com	-	-	-	-	0	NOERROR	F	F	F	T	0	gnar-writr.data.grammarlyaws.com,52.202.64.48,52.55.208.245,34.193.254.51	5.000000,60.000000,60.000000,60.000000	F
+1587203234.825174	C2uWMi1caW7y61wg4b	192.168.1.26	55006	192.168.1.1	53	udp	12690	-	www.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.23.100	104.000000	F
+1587203239.365414	C2uWMi1caW7y61wg4b	192.168.1.26	55006	192.168.1.1	53	udp	43500	-	ssl.gstatic.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.21.227	122.000000	F
+1587203235.101271	C2uWMi1caW7y61wg4b	192.168.1.26	55006	192.168.1.1	53	udp	9189	-	fonts.gstatic.com	-	-	-	-	0	NOERROR	F	F	F	T	0	gstaticadssl.l.google.com,172.217.22.3	109.000000,113.000000	F
+1587203239.365150	C2uWMi1caW7y61wg4b	192.168.1.26	55006	192.168.1.1	53	udp	41146	-	www.gstatic.com	-	-	-	-	0	NOERROR	F	F	F	T	0	216.58.205.227	54.000000	F
+1587203239.165794	C2uWMi1caW7y61wg4b	192.168.1.26	55006	192.168.1.1	53	udp	28697	-	ogs.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	www3.l.google.com,216.58.207.46	1403.000000,259.000000	F
+1587203239.365564	C2uWMi1caW7y61wg4b	192.168.1.26	55006	192.168.1.1	53	udp	21075	-	apis.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	plus.l.google.com,172.217.16.206	413627.000000,92.000000	F
+1587203300.097629	CM5x5sslqVGZgKMoh	192.168.1.1	5353	224.0.0.251	5353	udp	0	0.033504	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	ssw on funbox._ssw._tcp.local,TXT 19 capabilities=master TXT 13 protocol=mqtt,funbox.local,192.168.1.1,ssw on funbox._mqtt._tcp.local,TXT 31 topics=sah/from/$CN/pair-device,funbox.local,funbox._http._tcp.local,TXT 0 ,funbox.local	4500.000000,4500.000000,120.000000,120.000000,4500.000000,4500.000000,120.000000,4500.000000,4500.000000,120.000000	F
+1587203299.315030	Czjtod1ilTrAsm8tVc	192.168.1.26	55006	192.168.1.1	53	udp	48581	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.64,52.84.194.229,52.84.194.99,52.84.194.33	41.000000,41.000000,41.000000,41.000000	F
+1587203300.200427	CFOKyM2Sk7dSwyJxig	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587203301.099579	CM5x5sslqVGZgKMoh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203303.102492	CM5x5sslqVGZgKMoh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203307.108699	CM5x5sslqVGZgKMoh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203315.116755	CM5x5sslqVGZgKMoh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203331.127878	CVMOV41XJPYsFS3hz5	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203343.753539	Cvxos9wV7qyU4ABai	192.168.1.26	55006	192.168.1.1	53	udp	37711	-	f-log-extension.grammarly.io	-	-	-	-	0	NOERROR	F	F	F	T	0	3.211.167.19,35.168.163.196,54.84.32.14,52.45.142.235,18.232.238.106,52.202.6.97,34.238.61.244,34.201.196.81	38.000000,38.000000,38.000000,38.000000,38.000000,38.000000,38.000000,38.000000	F
+1587203363.160708	Csgv1yVZDnVysEFb1	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203357.666332	CY6V363qQAEdcGonm6	192.168.1.26	55006	192.168.1.1	53	udp	32205	-	chat-pa.clients6.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.23.170	224.000000	F
+1587203354.773195	CY6V363qQAEdcGonm6	192.168.1.26	55006	192.168.1.1	53	udp	49533	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.23.170	142.000000	F
+1587203380.377482	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203381.384296	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203384.397011	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203385.258030	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203386.265869	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203389.266826	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203392.786265	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203393.415115	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203396.432473	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203400.189591	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203401.193643	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203404.199850	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203409.952218	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203410.970064	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203413.979561	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203420.473450	CBAiwy2l1wnQy2SINh	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203380.376780	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203381.383397	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203384.396264	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203385.257445	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203386.265372	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203389.266273	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203392.785458	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203393.414338	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203396.431593	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203400.188834	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203401.193008	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203404.199193	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203409.951357	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203410.969357	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203413.978876	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203420.472743	CSYpAVfMnHWjFudm1	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203440.593109	CyHch11GoFRjoPU62e	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203441.599281	CyHch11GoFRjoPU62e	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203444.609819	CyHch11GoFRjoPU62e	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203440.593632	C7bJ1720Szd4VA46H2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203441.600058	C7bJ1720Szd4VA46H2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203444.610437	C7bJ1720Szd4VA46H2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203480.552387	C7Lc8HBSdvHYOmrb6	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587203480.164586	CzqOFH1QyCKtnbBtI9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203481.166547	CzqOFH1QyCKtnbBtI9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203483.169595	CzqOFH1QyCKtnbBtI9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203487.176828	CzqOFH1QyCKtnbBtI9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203495.185885	CzqOFH1QyCKtnbBtI9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203503.345473	Cqzxai3XtNm6xlF1b7	192.168.1.26	55006	192.168.1.1	53	udp	45384	-	plugins.jetbrains.com	-	-	-	-	0	NOERROR	F	F	F	T	0	54.192.230.13,54.192.230.95,54.192.230.65,54.192.230.108	1.000000,1.000000,1.000000,1.000000	F
+1587203502.956713	Cqzxai3XtNm6xlF1b7	192.168.1.26	55006	192.168.1.1	53	udp	44928	-	www.jetbrains.com	-	-	-	-	0	NOERROR	F	F	F	T	0	entry.prod.w3jbcom.aws.intellij.net,entry.prod-eu.w3jbcom.aws.intellij.net,34.251.128.46,18.200.1.4	60.000000,60.000000,60.000000,60.000000	F
+1587203511.199273	C8bSsg2VDNsBREZYG3	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203516.340259	CXpNfRT0qiMFancge	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203517.321564	CXpNfRT0qiMFancge	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203520.334980	CXpNfRT0qiMFancge	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203516.339790	CH2bVe2mh4c1sFPpge	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203517.321278	CH2bVe2mh4c1sFPpge	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203520.334507	CH2bVe2mh4c1sFPpge	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203539.680936	CRlpNO3uJWe0vEu484	192.168.1.26	55006	192.168.1.1	53	udp	54794	-	play.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.16.142	246.000000	F
+1587203551.185174	CdB3J04vQvZ8rwPTRa	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.000115	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587203551.188302	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	0.001859	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587203551.589868	CdB3J04vQvZ8rwPTRa	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.441315	macbook-air-szaremma.local	32769	qclass-32769	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587203551.396409	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	0.642897	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587203551.881880	CdB3J04vQvZ8rwPTRa	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.471198	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587203551.589649	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	0.764992	macbook-air-szaremma.local	32769	qclass-32769	255	*	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587203552.111444	CdB3J04vQvZ8rwPTRa	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	1.287295	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587203551.882541	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	1.521512	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587203552.116450	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	1.837187	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587203552.198295	CdB3J04vQvZ8rwPTRa	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	1.756748	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587203555.203415	CdB3J04vQvZ8rwPTRa	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.161689	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587203552.197838	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	3.168548	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587203553.404751	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	2.551060	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587203555.204628	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	4.161906	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587203555.955409	CdB3J04vQvZ8rwPTRa	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587203559.365461	CdB3J04vQvZ8rwPTRa	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587203543.224792	CkRtoY30i2vZhLASWi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203552.461040	CkRtoY30i2vZhLASWi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203553.461940	CkRtoY30i2vZhLASWi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203555.463034	CkRtoY30i2vZhLASWi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203559.467400	CkRtoY30i2vZhLASWi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203567.472272	CkRtoY30i2vZhLASWi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203582.597803	CLo7tt4Xs7xBvbdC26	192.168.1.19	57495	192.168.1.1	53	udp	13711	-	origin.guzzoni-apple.com.akadns.net	-	-	-	-	0	NOERROR	F	F	F	T	0	mu21p02sa.guzzoni-apple.com.akadns.net,17.130.74.5	221.000000,34.000000	F
+1587203583.539101	C5ZhFkb3eaGjrZZK4	192.168.1.19	54989	192.168.1.1	53	udp	45295	-	mesu-cdn.origin-apple.com.akadns.net	-	-	-	-	0	NOERROR	F	F	F	T	0	mesu.g.aaplimg.com,17.253.113.203,17.253.109.201	27.000000,7.000000,7.000000	F
+1587203555.409410	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	40.353909	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	4500.000000	F
+1587203595.764945	CKxh4o4lvycqzKHoQ7	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	4500.000000	F
+1587203599.350677	CmB2QB4SaGJigJRr3f	192.168.1.26	55006	192.168.1.1	53	udp	2809	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.229,52.84.194.64,52.84.194.33,52.84.194.99	47.000000,47.000000,47.000000,47.000000	F
+1587203557.410487	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203559.415555	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203561.418656	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203563.421451	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203564.224471	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203565.423996	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203567.430396	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203569.435685	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203571.465051	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203573.486166	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203575.489147	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203577.492743	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203579.496242	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203581.501227	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203583.501499	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203585.500168	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203587.503635	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203589.503744	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203591.508876	Cuy1iYDkVJs6sGiS1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203582.374747	CvHG251pToR9ZznB29	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203583.400695	CvHG251pToR9ZznB29	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203586.400268	CvHG251pToR9ZznB29	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203592.346089	CvHG251pToR9ZznB29	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203593.359230	CvHG251pToR9ZznB29	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203595.422979	CvHG251pToR9ZznB29	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203582.373886	CzoEl93T5PNbVoARKb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203583.388034	CzoEl93T5PNbVoARKb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203586.399385	CzoEl93T5PNbVoARKb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203592.345338	CzoEl93T5PNbVoARKb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203593.358663	CzoEl93T5PNbVoARKb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203595.422426	CzoEl93T5PNbVoARKb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203622.475235	CRbW3u3drq5WWLOLW7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203622.475795	CE3DxD4RvbiChXhRA8	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203660.550904	Cp1jCVxppRArRCgPc	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587203660.359883	C2g7DO2FTmOjPtXGgd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203661.361755	C2g7DO2FTmOjPtXGgd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203663.363961	C2g7DO2FTmOjPtXGgd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203667.368897	C2g7DO2FTmOjPtXGgd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203675.375442	C2g7DO2FTmOjPtXGgd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203691.386230	CLckt01JwZotUaIrO6	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203703.645678	CLCsHW2A43tyiWK5kh	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203703.646349	C7KcnZ3j7vNzDZr1G2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203723.393000	C4VgjC4Iut3BXmhUmb	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203792.094754	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	2952	-	instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	52.54.9.148,34.231.236.71,52.0.103.197,52.202.74.127,52.86.105.82,52.3.102.88,35.153.11.244,52.22.169.228	14.000000,14.000000,14.000000,14.000000,14.000000,14.000000,14.000000,14.000000	F
+1587203793.868877	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	37825	-	i.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	instagram.c10r.facebook.com,185.60.216.52	871.000000,20.000000	F
+1587203793.657881	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	13966	-	clients4.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	clients.l.google.com,216.58.205.238	57.000000,58.000000	F
+1587203789.941233	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	25226	-	www.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.23.100	60.000000	F
+1587203795.475079	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	2222	-	edge-chat.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	instagram.c10r.facebook.com,185.60.216.52	187.000000,13.000000	F
+1587203797.153216	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	40551	-	graph.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	instagram.c10r.facebook.com,185.60.216.52	1355.000000,46.000000	F
+1587203793.883313	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	64687	-	scontent-frt3-1.cdninstagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	31.13.92.51	43.000000	F
+1587203795.429447	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	16115	-	scontent-frt3-2.cdninstagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	157.240.20.63	44.000000	F
+1587203792.541526	CVPDSz1PqeyF4mzpzl	192.168.1.26	55006	192.168.1.1	53	udp	59397	-	www.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	z-p42-instagram.c10r.facebook.com,185.60.216.174	1811.000000,8.000000	F
+1587203832.185327	CEfplo4FmBecfHep49	192.168.1.26	55006	192.168.1.1	53	udp	6244	-	scontent-frx5-1.cdninstagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	185.60.216.52	45.000000	F
+1587203840.838414	CaJ5Zf3NpCRBdzElnd	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587203840.892287	CRzzP93TanW3UCCwh7	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	120.000000,4500.000000	F
+1587203840.892693	Cu601E4heJqMo5eAEg	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	120.000000,4500.000000	F
+1587203840.734032	CqC8h532KPRAkqawL2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203841.736773	CqC8h532KPRAkqawL2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203843.736849	CqC8h532KPRAkqawL2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203847.739011	CqC8h532KPRAkqawL2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203855.741436	CqC8h532KPRAkqawL2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203841.658470	CiPCcOyymR28UIDP6	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203842.662694	CiPCcOyymR28UIDP6	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203845.742785	CiPCcOyymR28UIDP6	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203854.725145	CiPCcOyymR28UIDP6	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203841.658239	CPaiUA3LmrHdBsr5R	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203842.661671	CPaiUA3LmrHdBsr5R	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203845.741995	CPaiUA3LmrHdBsr5R	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203854.724266	CPaiUA3LmrHdBsr5R	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203871.742271	CUNQbq3nffeWUxZle6	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203881.785302	CGakdf2qqf5qXgeIk1	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203881.786291	CevXyn1go5PlxrNRPf	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203864.205226	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203865.211987	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203868.220972	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203871.249319	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203872.256546	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203875.267285	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203882.972064	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203883.982097	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203889.790897	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203890.794538	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203893.800893	CkeutE4Ux60ePwkfac	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203864.206008	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203865.212737	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203868.221611	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_airplay._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203871.250032	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203872.257289	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203875.267677	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203882.972959	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203883.982688	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203889.791627	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203890.795390	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203893.801709	CJjtts2Fuwn4t2HWk7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203899.390610	CEQ4wK3VEwQqPyyAJ9	192.168.1.26	55006	192.168.1.1	53	udp	11893	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.99,52.84.194.229,52.84.194.33,52.84.194.64	9.000000,9.000000,9.000000,9.000000	F
+1587203903.752910	CriRf74U5bJClMdTn9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203952.036689	CgY5Ds11faGKkELtB8	192.168.1.26	55006	192.168.1.1	53	udp	30386	-	prod.fus.aws.intellij.net	-	-	-	-	0	NOERROR	F	F	F	T	0	54.192.230.128,54.192.230.94,54.192.230.56,54.192.230.123	60.000000,60.000000,60.000000,60.000000	F
+1587203951.765550	CgY5Ds11faGKkELtB8	192.168.1.26	55006	192.168.1.1	53	udp	21644	-	resources.jetbrains.com	-	-	-	-	0	NOERROR	F	F	F	T	0	54.192.230.40,54.192.230.114,54.192.230.108,54.192.230.113	60.000000,60.000000,60.000000,60.000000	F
+1587203976.054832	CaB3BC32regqkJfxM2	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587203976.055624	CDrcMq2leBllxVMbu6	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587203977.158523	CFQi4D1C3nWiyEzOYk	192.168.1.26	55006	192.168.1.1	53	udp	57496	-	www.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	z-p42-instagram.c10r.facebook.com,31.13.92.174	1453.000000,47.000000	F
+1587203975.570066	C7IeSp4qVdjhIJnfyi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203976.583726	C7IeSp4qVdjhIJnfyi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203979.590222	C7IeSp4qVdjhIJnfyi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203988.615272	C7IeSp4qVdjhIJnfyi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203975.570997	CDk96WhZfTlhfj1O1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203976.584514	CDk96WhZfTlhfj1O1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203979.590887	CDk96WhZfTlhfj1O1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587203988.617084	CDk96WhZfTlhfj1O1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204005.479406	C0Iwf02t6RcIpXSyL2	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	4500.000000	F
+1587204005.481248	CDOl1D2OfGdnsBus6h	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	4500.000000	F
+1587204004.095351	C0KExk4MrdxEiksnea	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204005.104817	C0KExk4MrdxEiksnea	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204008.113580	C0KExk4MrdxEiksnea	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204004.094843	Cy21XW2PBlSSkekcCf	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204005.103444	Cy21XW2PBlSSkekcCf	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204008.112805	Cy21XW2PBlSSkekcCf	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204021.437172	CMcPf72l2oBdB9ePqh	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587204025.425000	CJ11xQ1MEDsyx6K0E8	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204026.431466	CJ11xQ1MEDsyx6K0E8	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204029.449401	CJ11xQ1MEDsyx6K0E8	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204025.425843	CrXSvi4zak1vieDRVd	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204026.432353	CrXSvi4zak1vieDRVd	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204029.450465	CrXSvi4zak1vieDRVd	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204021.149329	Crn7GE2OFGpS3xvN55	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204022.150437	Crn7GE2OFGpS3xvN55	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204024.153493	Crn7GE2OFGpS3xvN55	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204028.157446	Crn7GE2OFGpS3xvN55	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204036.164476	Crn7GE2OFGpS3xvN55	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204052.174749	CJSriz1Jh3XArQOEo9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204084.208287	CH3W554zPrrweQmuz2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204113.248731	ChBlxe1v7yB2iEGIm4	192.168.1.26	55006	192.168.1.1	53	udp	37722	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.16.138	31.000000	F
+1587204155.077449	CG1YCv1uZiAlxd9Ep7	192.168.1.26	55006	192.168.1.1	53	udp	40012	-	clients4.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	clients.l.google.com,172.217.16.206	27.000000,27.000000	F
+1587204152.700058	CG1YCv1uZiAlxd9Ep7	192.168.1.26	55006	192.168.1.1	53	udp	1383	-	live.github.com	-	-	-	-	0	NOERROR	F	F	F	T	0	140.82.113.26	60.000000	F
+1587204165.533110	CSxNUC2OrxUw1yKi6h	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587204165.533924	CfA84g2UtlveDO9C01	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587204165.282628	CQOB1l2ovK5BltR1u4	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204166.289146	CQOB1l2ovK5BltR1u4	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204169.301679	CQOB1l2ovK5BltR1u4	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204179.908240	CQOB1l2ovK5BltR1u4	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204180.907452	CQOB1l2ovK5BltR1u4	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204183.944147	CQOB1l2ovK5BltR1u4	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204192.954696	CQOB1l2ovK5BltR1u4	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204165.283493	CoCAyd31ojxZfEw1Ma	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204166.290063	CoCAyd31ojxZfEw1Ma	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204169.302315	CoCAyd31ojxZfEw1Ma	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204179.909060	CoCAyd31ojxZfEw1Ma	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204180.908210	CoCAyd31ojxZfEw1Ma	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204183.944666	CoCAyd31ojxZfEw1Ma	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204192.954696	CoCAyd31ojxZfEw1Ma	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204199.441414	CIij8Q2tc4yQvG1c55	192.168.1.26	55006	192.168.1.1	53	udp	36085	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.33,52.84.194.64,52.84.194.99,52.84.194.229	44.000000,44.000000,44.000000,44.000000	F
+1587204201.431634	CZgsgJ2sighqrTsKu7	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	120.000000,4500.000000	F
+1587204201.432135	C3p5BC34betMcaboMk	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	120.000000,4500.000000	F
+1587204204.461514	C5GvEV3pLT4E2ke3K	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587204217.173556	ClkdvJwjSQFALcYG4	192.168.1.26	55006	192.168.1.1	53	udp	53636	-	graph.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	instagram.c10r.facebook.com,31.13.92.51	1974.000000,34.000000	F
+1587204219.998293	CZScX73839DFC5W0y7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204219.999074	CEmg321H1xlEeIUsZa	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204201.310069	ChfOsc4iJK7WLOanRa	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204202.312049	ChfOsc4iJK7WLOanRa	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204204.314102	ChfOsc4iJK7WLOanRa	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204208.319099	ChfOsc4iJK7WLOanRa	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204216.333262	ChfOsc4iJK7WLOanRa	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204232.345407	CtmUPf4btAAuczKAUj	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204239.567736	CHxBFv4jGBtb9wt7Hi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_fb._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204247.561348	CHxBFv4jGBtb9wt7Hi	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_fb._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204239.567813	CDTuwO38SKMg9CLdFd	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_fb._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204247.563291	CDTuwO38SKMg9CLdFd	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_fb._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204264.363000	CdUPhd1SOCpvVQC5y7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204355.716774	C0LXrM1tot4MPmGWMb	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	4500.000000	F
+1587204357.217865	C0LXrM1tot4MPmGWMb	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587204357.820052	C0LXrM1tot4MPmGWMb	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587204355.718381	CUXFAh3wGjXXKKMDIf	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	4500.000000	F
+1587204357.218649	CUXFAh3wGjXXKKMDIf	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587204357.820869	CUXFAh3wGjXXKKMDIf	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587204354.387354	Cp10Tr3ekWvmHqJlPg	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204355.435879	Cp10Tr3ekWvmHqJlPg	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204357.606637	Cp10Tr3ekWvmHqJlPg	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	32769	qclass-32769	16	TXT	-	-	F	F	F	F	0	-	-	F
+1587204358.412767	Cp10Tr3ekWvmHqJlPg	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204361.067755	Cp10Tr3ekWvmHqJlPg	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204370.051506	Cp10Tr3ekWvmHqJlPg	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204357.071647	Cq8dJJ2siM264dLH71	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	32769	qclass-32769	16	TXT	-	-	F	F	F	F	0	-	-	F
+1587204358.411638	Cq8dJJ2siM264dLH71	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204361.041165	Cq8dJJ2siM264dLH71	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204370.050443	Cq8dJJ2siM264dLH71	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204381.750368	CKkfPY3FPyuMMyO6Aj	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587204397.127130	CsDFHl2r3rU5kxY9Ek	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204397.132698	CCrATH1m5eXcZ29Hk2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204381.604659	Ct2UQR1sUO5ejtLUo2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204382.608773	Ct2UQR1sUO5ejtLUo2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204384.609744	Ct2UQR1sUO5ejtLUo2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204388.615649	Ct2UQR1sUO5ejtLUo2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204396.624987	Ct2UQR1sUO5ejtLUo2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204412.635240	Cnm6pJ1tZ5jmRMteQa	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204444.668904	CKpwCd4gRgl2XF7Bd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204478.395462	C23m8ZfJo32sJPw9k	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204499.475912	CFoqdd1LagYaKqOaDe	192.168.1.26	55006	192.168.1.1	53	udp	62043	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.229,52.84.194.33,52.84.194.99,52.84.194.64	30.000000,30.000000,30.000000,30.000000	F
+1587204537.045853	CDS9Tw3eloxl2WKvX8	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587204537.046022	Cb3OzY2hGewfd8Cts1	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	4500.000000	F
+1587204532.751459	CJ9Jw43eLjSgjAxkv3	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204533.780026	CJ9Jw43eLjSgjAxkv3	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204536.841591	CJ9Jw43eLjSgjAxkv3	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	32769	qclass-32769	16	TXT	-	-	F	F	F	F	0	-	-	F
+1587204537.822478	CJ9Jw43eLjSgjAxkv3	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204540.830476	CJ9Jw43eLjSgjAxkv3	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204549.846353	CJ9Jw43eLjSgjAxkv3	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204562.309901	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	120.000000,4500.000000	F
+1587204562.309537	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,TXT 22 rpBA=91:C4:04:BB:A1:76 TXT 10 rpVr=152.1	120.000000,4500.000000	F
+1587204563.722522	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204563.722317	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204564.726060	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	0.998613	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204536.840609	CpvRxf4O6ebRdgrjsl	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	32769	qclass-32769	16	TXT	-	-	F	F	F	F	0	-	-	F
+1587204537.821954	CpvRxf4O6ebRdgrjsl	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204540.829834	CpvRxf4O6ebRdgrjsl	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204549.845623	CpvRxf4O6ebRdgrjsl	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204566.394164	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	1.330860	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204565.726248	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204567.725720	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_apple-pairable._tcp.local	32769	qclass-32769	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204567.838370	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	1.646581	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204569.486246	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook-air-szaremma.local	32769	qclass-32769	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204569.816077	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.654429	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=AE:88:59:7A:2B:6C TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204568.396737	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	2.074621	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=AE:88:59:7A:2B:6C TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204568.771489	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	1.798184	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204569.966029	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.603966	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204568.799498	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	2.059390	_apple-pairable._tcp.local	32769	qclass-32769	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204570.217289	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.641661	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204562.329728	CX6Wvy3I2vp0ixfaD9	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 5 path= TXT 8 caps=LDS,_opcua-tcp._tcp.local,ua local discovery server on dell-t-l._opcua-tcp._tcp.local,dell-t-l.local	4500.000000,4500.000000,4500.000000,120.000000	F
+1587204572.867296	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.079913	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204569.714558	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	3.234120	macbook-air-szaremma.local	32769	qclass-32769	255	*	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204569.815074	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	5.146188	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204574.961224	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587204548.769999	C5lpUl372FTgQ03SWd	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204549.778729	C5lpUl372FTgQ03SWd	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204552.847797	C5lpUl372FTgQ03SWd	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204561.811009	C5lpUl372FTgQ03SWd	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204548.770800	CJzloo32M1fQQBYbC2	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204549.778867	CJzloo32M1fQQBYbC2	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204552.854063	CJzloo32M1fQQBYbC2	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204561.811689	CJzloo32M1fQQBYbC2	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204569.964626	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	12.229851	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204581.845243	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.350584	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204570.215875	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	20.999990	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204562.182655	CtUMwj3F3PmVOW1cC8	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204563.185615	CtUMwj3F3PmVOW1cC8	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204565.190407	CtUMwj3F3PmVOW1cC8	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204569.189978	CtUMwj3F3PmVOW1cC8	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204577.190782	CtUMwj3F3PmVOW1cC8	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204588.866788	CAjh203gdOSNIuPgQe	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_homekit._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204588.867445	CvLcdq18xAWj4wahn7	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_homekit._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204591.217330	CaaFTpziHCZ9fgM8c	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	7.b.6.6.6.b.5.5.4.1.7.2.1.a.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204593.191943	CjzWL21KYYUZo5QLF	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204570.773259	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	34.557108	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204603.914016	C6VftAGcN3t2TyOmc	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	1.417445	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204608.844749	CDBnY21QIIygnCZLOd	192.168.1.33	137	192.168.1.255	137	udp	17768	-	\x01\x02__MSBROWSE__\x02	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1587204625.193624	CWwpoX5MuVg46Q5h	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204605.252626	ChdnQc27GxNPJx8tKc	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204606.266106	ChdnQc27GxNPJx8tKc	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204609.277114	ChdnQc27GxNPJx8tKc	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204614.034354	ChdnQc27GxNPJx8tKc	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204615.042340	ChdnQc27GxNPJx8tKc	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204616.945044	ChdnQc27GxNPJx8tKc	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204617.959180	ChdnQc27GxNPJx8tKc	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204618.063779	ChdnQc27GxNPJx8tKc	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204605.253270	CIhXJJ2yv7gDWfJOBi	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204606.266696	CIhXJJ2yv7gDWfJOBi	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204609.278055	CIhXJJ2yv7gDWfJOBi	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204614.034846	CIhXJJ2yv7gDWfJOBi	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204615.043014	CIhXJJ2yv7gDWfJOBi	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204616.945695	CIhXJJ2yv7gDWfJOBi	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204617.959992	CIhXJJ2yv7gDWfJOBi	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204618.064250	CIhXJJ2yv7gDWfJOBi	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204572.870175	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204572.870239	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204574.793266	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204576.777920	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204576.848319	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204578.780056	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204580.782246	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204581.844409	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204582.780497	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204584.780413	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204586.828184	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204588.843575	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204590.786254	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204592.785717	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204594.786727	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204596.786047	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204598.788919	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204600.788242	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204602.790893	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204603.912267	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204604.793026	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204606.797548	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204608.799642	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204610.808747	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204612.810074	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204614.816586	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204616.822177	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204618.834154	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204620.831501	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204622.839805	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204624.841049	COh2mFAKWauVZTEFg	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204640.912179	CEl9K21C5d8WawneLb	192.168.1.33	137	192.168.1.255	137	udp	17773	-	WORKGROUP	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1587204662.837241	Clrom83b5U2pR9RkCh	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	7.b.6.6.6.b.5.5.4.1.7.2.1.a.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204662.838495	CLOF892dnMyM2omyF6	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	7.b.6.6.6.b.5.5.4.1.7.2.1.a.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204672.209835	CpEPq5299FAsK9qKU8	192.168.1.33	58556	192.168.1.255	137	udp	0	-	FUNBOX	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1587204677.051900	CO0hP3dGFyfQiuutl	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204677.053626	CiRVr53u1xPLKCbh4a	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204694.262352	CiRVr53u1xPLKCbh4a	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook-air-szaremma.local	32769	qclass-32769	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204694.263328	CO0hP3dGFyfQiuutl	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook-air-szaremma.local	32769	qclass-32769	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204694.712068	CO0hP3dGFyfQiuutl	192.168.1.33	5353	224.0.0.251	5353	udp	0	0.501830	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=DD:E9:E3:83:9F:7D TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204694.713257	CiRVr53u1xPLKCbh4a	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.502151	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=DD:E9:E3:83:9F:7D TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204695.033805	CiRVr53u1xPLKCbh4a	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	0.340397	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204695.036036	CO0hP3dGFyfQiuutl	192.168.1.33	5353	224.0.0.251	5353	udp	0	0.340867	macbook-air-szaremma.local	1	C_INTERNET	255	*	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local	120.000000,120.000000	F
+1587204706.075808	CT68Fj4OuM4ZM4shwb	192.168.1.33	56906	192.168.1.255	137	udp	1	-	FUNBOX	1	C_INTERNET	32	NB	-	-	F	F	T	F	1	-	-	F
+1587204696.240552	CiRVr53u1xPLKCbh4a	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=DD:E9:E3:83:9F:7D TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204697.317149	CiRVr53u1xPLKCbh4a	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	7.b.6.6.6.b.5.5.4.1.7.2.1.a.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local,TXT 22 rpBA=DD:E9:E3:83:9F:7D TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	120.000000,120.000000,4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204701.318727	CiRVr53u1xPLKCbh4a	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	7.b.6.6.6.b.5.5.4.1.7.2.1.a.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local,TXT 22 rpBA=DD:E9:E3:83:9F:7D TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	120.000000,120.000000,4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204696.242823	CO0hP3dGFyfQiuutl	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	TXT 22 rpBA=DD:E9:E3:83:9F:7D TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204697.314575	CO0hP3dGFyfQiuutl	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	7.b.6.6.6.b.5.5.4.1.7.2.1.a.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local,TXT 22 rpBA=DD:E9:E3:83:9F:7D TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	120.000000,120.000000,4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204701.315976	CO0hP3dGFyfQiuutl	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	7.b.6.6.6.b.5.5.4.1.7.2.1.a.c.0.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local,macbook-air-szaremma.local,TXT 22 rpBA=DD:E9:E3:83:9F:7D TXT 10 rpVr=152.1,_companion-link._tcp.local,macbook air (szaremma)._companion-link._tcp.local,TXT 19 model=MacBookAir6\x2c2 TXT 10 osxvers=17,macbook-air-szaremma.local,fe80::ca1:2714:55b6:66b7,192.168.1.33	120.000000,120.000000,4500.000000,4500.000000,4500.000000,4500.000000,120.000000,120.000000,120.000000	F
+1587204742.643908	CgO0pj2IZnvToVa08f	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587204744.845490	COExOv4Nw6zxhVLdgk	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204742.392711	C79zJD1pyY7LDP1f86	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204743.394503	C79zJD1pyY7LDP1f86	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204745.396547	C79zJD1pyY7LDP1f86	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204749.402774	C79zJD1pyY7LDP1f86	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204757.411901	C79zJD1pyY7LDP1f86	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204773.423733	CNhEQO2wxjcJaGpYo2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204799.511013	C56cBxDL9ehBgfx9d	192.168.1.26	55006	192.168.1.1	53	udp	52586	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.64,52.84.194.229,52.84.194.99,52.84.194.33	29.000000,29.000000,29.000000,29.000000	F
+1587204805.431652	CgD88N31qoRM7Hted9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204864.854256	CUjnoV3bv8u0MypvAk	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204922.551453	CBwejP2mn15GJCxdTl	192.168.1.1	5353	224.0.0.251	5353	udp	0	0.069569	_companion-link._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	_http._tcp.local	4500.000000	F
+1587204922.662869	CLCQqpDWAwHRwPhti	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587204922.662940	CgKkQ31QqTfu1FC0G9	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587204922.656946	C3TL6C4xxdbbcqO98	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587204922.982976	CKVvr72TG6TvQiEHak	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204923.989046	CKVvr72TG6TvQiEHak	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204927.002535	CKVvr72TG6TvQiEHak	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204922.983828	CdiEQC2Cjl6Qhevuk1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204923.989277	CdiEQC2Cjl6Qhevuk1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204927.003426	CdiEQC2Cjl6Qhevuk1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204923.552477	CBwejP2mn15GJCxdTl	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204925.555365	CBwejP2mn15GJCxdTl	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204929.558537	CBwejP2mn15GJCxdTl	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204937.567688	CBwejP2mn15GJCxdTl	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204953.570784	C9c8kY2b3UFMyP4Sig	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204945.214118	CtgTSq2bmQ2sweiimb	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204946.225424	CtgTSq2bmQ2sweiimb	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204947.969955	CtgTSq2bmQ2sweiimb	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204948.973922	CtgTSq2bmQ2sweiimb	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204949.237519	CtgTSq2bmQ2sweiimb	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204951.985044	CtgTSq2bmQ2sweiimb	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204958.260918	CtgTSq2bmQ2sweiimb	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204945.213397	CZpGZ74nR6y4zBXMYf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204946.224684	CZpGZ74nR6y4zBXMYf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204947.969439	CZpGZ74nR6y4zBXMYf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204948.973176	CZpGZ74nR6y4zBXMYf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204949.236833	CZpGZ74nR6y4zBXMYf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204951.984108	CZpGZ74nR6y4zBXMYf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204958.259880	CZpGZ74nR6y4zBXMYf	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204970.156697	CyBEHV3pydDyzPwVMc	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204971.164324	CyBEHV3pydDyzPwVMc	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204974.172516	CyBEHV3pydDyzPwVMc	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204970.157514	CTe6am3cnF6f01crh	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204971.165288	CTe6am3cnF6f01crh	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204974.173381	CTe6am3cnF6f01crh	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204984.877227	CObP7c39GQxN5ydmVk	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204985.573623	CsmYOw3uqEeSWQ0T1b	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204982.608781	CwDrPb3YNG3dprpnNb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204983.586596	CwDrPb3YNG3dprpnNb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204985.490220	CwDrPb3YNG3dprpnNb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204986.497489	CwDrPb3YNG3dprpnNb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204982.609094	Cj7dAW3tGVttxqCiPf	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204983.586651	Cj7dAW3tGVttxqCiPf	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204985.491179	Cj7dAW3tGVttxqCiPf	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587204986.498168	Cj7dAW3tGVttxqCiPf	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205103.180654	C7ZCC53DMK1VFdCrf1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587205099.551146	CHYDqPexNDbndKmY6	192.168.1.26	55006	192.168.1.1	53	udp	12263	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.229,52.84.194.99,52.84.194.33,52.84.194.64	11.000000,11.000000,11.000000,11.000000	F
+1587205103.180528	CXFlmdPObMC24azo1	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587205103.222235	C6oZNOQTcwWuztjad	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587205102.998516	CW2FCg20eVXxnKeAi7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205104.000465	CW2FCg20eVXxnKeAi7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205106.002402	CW2FCg20eVXxnKeAi7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205110.007426	CW2FCg20eVXxnKeAi7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205118.017638	CW2FCg20eVXxnKeAi7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205134.020851	CN5sK84i8Lm2la1T56	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205118.675408	C4cZ8S3n6EXcQ9oaR9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205119.678810	C4cZ8S3n6EXcQ9oaR9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205122.690112	C4cZ8S3n6EXcQ9oaR9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205131.718813	C4cZ8S3n6EXcQ9oaR9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205118.676235	C29OU73BmqKcNXYJQa	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205119.679612	C29OU73BmqKcNXYJQa	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205122.690750	C29OU73BmqKcNXYJQa	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205131.719731	C29OU73BmqKcNXYJQa	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205159.834367	CFTx5J1TPi9Biy5OQg	192.168.1.26	55006	192.168.1.1	53	udp	59130	-	clients4.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	clients.l.google.com,172.217.21.238	21.000000,21.000000	F
+1587205166.053615	CXJlQB40BG1dw4h3Ca	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205169.953295	CbVlFd2puKl320kU5b	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205170.957874	CbVlFd2puKl320kU5b	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205173.968397	CbVlFd2puKl320kU5b	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205169.954387	CfCoJZ2ttf9tWVsJDl	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205170.958287	CfCoJZ2ttf9tWVsJDl	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205173.968460	CfCoJZ2ttf9tWVsJDl	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205224.893016	CMs6AD4Lbf1h2fYer5	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205224.851652	CzeapP3mC3MSfsqlf7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205225.851679	CzeapP3mC3MSfsqlf7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205228.883015	CzeapP3mC3MSfsqlf7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205237.887840	CzeapP3mC3MSfsqlf7	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205224.852654	C5meqB2l1EaBDCoZg7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205225.852633	C5meqB2l1EaBDCoZg7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205228.883710	C5meqB2l1EaBDCoZg7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205237.888807	C5meqB2l1EaBDCoZg7	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205283.417165	CVnB5wD61WZaMXnvh	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587205283.417389	CgGCOCQgCOpztP4od	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587205283.444907	CHmwAY19tJfSctOZHf	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	dell-t-l.local	120.000000	F
+1587205283.193542	CZoMqPwWoDYM5UT2i	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205284.194418	CZoMqPwWoDYM5UT2i	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205286.198551	CZoMqPwWoDYM5UT2i	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205290.205640	CZoMqPwWoDYM5UT2i	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205298.215578	CZoMqPwWoDYM5UT2i	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205299.927115	CjIO0j1uVXfLsE1v36	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205300.937584	CjIO0j1uVXfLsE1v36	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205302.731785	CjIO0j1uVXfLsE1v36	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205303.739553	CjIO0j1uVXfLsE1v36	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205303.944034	CjIO0j1uVXfLsE1v36	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205299.926659	C4f8Ao2gUdjrZssF5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205300.937234	C4f8Ao2gUdjrZssF5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205302.731291	C4f8Ao2gUdjrZssF5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205303.739012	C4f8Ao2gUdjrZssF5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205303.942969	C4f8Ao2gUdjrZssF5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205314.225938	CaIpVs4tD3WaVkCxN9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205315.754131	CFlnZi2J2HzjkNQYLb	192.168.1.107	5353	224.0.0.251	5353	udp	0	-	_opcua-tcp._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	ua local discovery server on dell-t-l._opcua-tcp._tcp.local	0.000000	F
+1587205316.150950	CcnOPk4NYUG8gBSC8b	fe80::5872:fc63:5759:9eeb	65258	ff02::1:3	5355	udp	7986	-	dell-t-l	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1587205316.242350	CcnOPk4NYUG8gBSC8b	fe80::5872:fc63:5759:9eeb	65258	ff02::1:3	5355	udp	7986	-	dell-t-l	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1587205316.151211	C92kux4X5BfcanjfFg	192.168.1.107	55159	224.0.0.252	5355	udp	7986	-	dell-t-l	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1587205316.242371	C92kux4X5BfcanjfFg	192.168.1.107	55159	224.0.0.252	5355	udp	7986	-	dell-t-l	1	C_INTERNET	255	*	-	-	F	F	F	F	0	-	-	F
+1587205344.909938	CDSm732YQyWiFKNBkj	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205346.228608	C1zI0fFdlmpDmqTUa	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205359.098491	CXuCxz4CJdvXOHpO74	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205360.105468	CXuCxz4CJdvXOHpO74	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205361.845985	CXuCxz4CJdvXOHpO74	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205362.859131	CXuCxz4CJdvXOHpO74	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205359.098078	Cz26RT3Yxskj8Ct7B5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205360.104863	Cz26RT3Yxskj8Ct7B5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205361.845106	Cz26RT3Yxskj8Ct7B5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205362.858551	Cz26RT3Yxskj8Ct7B5	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205399.602940	C3U8Mx4UYbx4P6fe8e	192.168.1.26	55006	192.168.1.1	53	udp	28131	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.99,52.84.194.64,52.84.194.229,52.84.194.33	8.000000,8.000000,8.000000,8.000000	F
+1587205446.584892	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	16.903135	a.8.f.7.2.0.2.9.b.6.9.b.2.7.4.1.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	_mqtt._tcp.local,_ssw._tcp.local	4500.000000,4500.000000	F
+1587205463.708972	CKlqI32agdwuxYifD4	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587205442.148972	CdNjoH23hwkUOnKXJ3	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205443.154055	CdNjoH23hwkUOnKXJ3	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205446.170962	CdNjoH23hwkUOnKXJ3	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205455.188074	CdNjoH23hwkUOnKXJ3	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205442.150637	C8nrQs1ZZpiFctrZdb	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205443.154355	C8nrQs1ZZpiFctrZdb	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205446.172259	C8nrQs1ZZpiFctrZdb	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205455.188957	C8nrQs1ZZpiFctrZdb	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205463.708110	C8N87dfEth2HGsj3a	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587205482.251660	CvKUnP2fSo4UYru7ue	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205482.252541	ClXGhC1JtYahQYM6X8	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205447.586934	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	a.8.f.7.2.0.2.9.b.6.9.b.2.7.4.1.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205449.590993	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	a.8.f.7.2.0.2.9.b.6.9.b.2.7.4.1.0.0.0.0.0.0.0.0.0.0.0.0.0.8.e.f.ip6.arpa	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205463.462262	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205464.464411	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205466.466526	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205470.472585	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205478.481642	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205494.491903	ChFxL1455OQ06IsgK7	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205526.525769	CBhm1x8RgpQhicKCh	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205563.418313	CW3fNq2hsROFV0D62f	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205563.419019	CqjJffeGDd67BlCOh	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205584.928091	CodOIziUuAPPpYpg1	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205643.538531	COvMQ8246Je8OUoCW6	192.168.1.1	5353	224.0.0.251	5353	udp	0	0.039509	_companion-link._tcp.local	1	C_INTERNET	12	PTR	0	NOERROR	T	F	F	F	0	ssw on funbox._ssw._tcp.local,TXT 19 capabilities=master TXT 13 protocol=mqtt,funbox.local,192.168.1.1,ssw on funbox._mqtt._tcp.local,TXT 31 topics=sah/from/$CN/pair-device,funbox.local,funbox._http._tcp.local,TXT 0 ,funbox.local	4500.000000,4500.000000,120.000000,120.000000,4500.000000,4500.000000,120.000000,4500.000000,4500.000000,120.000000	F
+1587205640.350913	CqD7zM17vW1xG718Ak	192.168.1.12	58238	192.168.1.1	53	udp	31710	-	e6858.dsce9.akamaiedge.net	-	-	-	-	0	NOERROR	F	F	F	T	0	23.211.151.64	12.000000	F
+1587205643.713844	CkM4SPlt7PzuDNXx7	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587205643.714805	Cd0xZy4AQsurb1AEn6	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	macbook air (szaremma)._companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook-air-szaremma.local	120.000000	F
+1587205659.078616	CU04FR1wPitRIC8kki	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205659.080355	CJKa6e43fADBJRvmn2	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_apple-pairable._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205644.541537	COvMQ8246Je8OUoCW6	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205646.543353	COvMQ8246Je8OUoCW6	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205650.549493	COvMQ8246Je8OUoCW6	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205658.558763	COvMQ8246Je8OUoCW6	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205674.561025	CWKf3Y3vVZBYPkdsU5	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205674.148415	CjS6K13Wt3NWRBnVP4	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205675.156191	CjS6K13Wt3NWRBnVP4	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205678.165589	CjS6K13Wt3NWRBnVP4	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205687.188420	CjS6K13Wt3NWRBnVP4	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205674.147412	CODbWw22DeanYe8zwb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205675.155367	CODbWw22DeanYe8zwb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205678.164567	CODbWw22DeanYe8zwb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205687.187703	CODbWw22DeanYe8zwb	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205699.642678	CqDjZi2L8U1Zn9UJS4	192.168.1.26	55006	192.168.1.1	53	udp	25561	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.33,52.84.194.229,52.84.194.99,52.84.194.64	20.000000,20.000000,20.000000,20.000000	F
+1587205704.932818	CsHbXR5CTWFHL9Io9	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205706.564572	CouFgg3jbEOn7MhWgj	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205720.695100	CdtBpl2qttryxKCm7	192.168.1.26	55006	192.168.1.1	53	udp	26122	-	www.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.18.4	261.000000	F
+1587205721.679514	CdtBpl2qttryxKCm7	192.168.1.26	55006	192.168.1.1	53	udp	49804	-	pagead2.googlesyndication.com	-	-	-	-	0	NOERROR	F	F	F	T	0	pagead46.l.doubleclick.net,172.217.22.2	22.000000,21.000000	F
+1587205724.184880	CwB7Vi1gG5tMUV8O8d	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205725.190511	CwB7Vi1gG5tMUV8O8d	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205727.182557	CwB7Vi1gG5tMUV8O8d	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205728.189793	CwB7Vi1gG5tMUV8O8d	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205728.294172	CwB7Vi1gG5tMUV8O8d	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205731.200518	CwB7Vi1gG5tMUV8O8d	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205737.317768	CwB7Vi1gG5tMUV8O8d	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205724.185352	CNXeLfxMRfvVlah1f	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205725.191146	CNXeLfxMRfvVlah1f	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205727.183165	CNXeLfxMRfvVlah1f	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205728.190202	CNXeLfxMRfvVlah1f	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205728.295690	CNXeLfxMRfvVlah1f	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205731.201382	CNXeLfxMRfvVlah1f	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205737.319297	CNXeLfxMRfvVlah1f	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205780.326146	CjfCSB2oNJ85W3HEo3	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587205782.332866	CjfCSB2oNJ85W3HEo3	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587205784.339396	CjfCSB2oNJ85W3HEo3	fe80::ca1:2714:55b6:66b7	5353	ff02::fb	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587205780.325318	CgQq6w3LEs4gYhSFS3	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587205782.332476	CgQq6w3LEs4gYhSFS3	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587205784.339337	CgQq6w3LEs4gYhSFS3	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	-	-	-	-	0	NOERROR	T	F	F	F	0	macbook air (szaremma)._companion-link._tcp.local	0.000000	F
+1587205824.938578	C4SX461dBByTwKPDhl	192.168.1.33	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205823.660328	CA42po15e5St9HFH49	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205824.663480	CA42po15e5St9HFH49	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205826.665459	CA42po15e5St9HFH49	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205830.671476	CA42po15e5St9HFH49	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205838.680797	CA42po15e5St9HFH49	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205854.683052	CfGESu3qJoatbn4NI5	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205853.623143	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205857.644016	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205870.635399	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205871.649111	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205873.418658	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205874.422484	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205874.659428	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205877.432631	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205883.682734	C5pOHZ2pdVc5RKocC	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205853.623998	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205854.831450	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205857.645112	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205870.636268	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205871.649733	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205873.419445	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205874.423198	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205874.660230	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205877.433366	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205883.683385	CwYLao3d2vwwzwmY19	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205886.684653	CaDcYCb7PNoHWDXG	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587205927.342178	CEtXOq1AiqMYf2uogj	192.168.1.26	55006	192.168.1.1	53	udp	37909	-	safebrowsing.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.23.170	99.000000	F
+1587205999.698831	CtfKeD4UOOwna8Yj18	192.168.1.26	55006	192.168.1.1	53	udp	16295	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.33,52.84.194.99,52.84.194.229,52.84.194.64	44.000000,44.000000,44.000000,44.000000	F
+1587206003.729857	CXHOz92sbx5vd4Uc2l	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206004.731973	CXHOz92sbx5vd4Uc2l	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206006.734976	CXHOz92sbx5vd4Uc2l	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206010.740101	CXHOz92sbx5vd4Uc2l	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206018.749222	CXHOz92sbx5vd4Uc2l	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206034.760312	CoHQlQ2IOPZr6CKx74	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206047.181957	CgrakA1mHcygsuwO3a	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206048.188956	CgrakA1mHcygsuwO3a	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206051.217785	CgrakA1mHcygsuwO3a	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206047.182712	C6FPZQ17X79ayd3ncd	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206048.189821	C6FPZQ17X79ayd3ncd	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206051.218550	C6FPZQ17X79ayd3ncd	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206066.776950	CscfUF4FjdXFkW0H9l	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206080.850441	CHMaHI280Rqjbij97i	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206081.750499	CHMaHI280Rqjbij97i	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206084.758447	CHMaHI280Rqjbij97i	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206080.861476	CWdYJH2x5tCOKhALaj	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206081.751114	CWdYJH2x5tCOKhALaj	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206084.759045	CWdYJH2x5tCOKhALaj	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206089.758553	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206098.959680	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	1	-	_cc32e753._sub._googlecast._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206100.097842	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	1	-	_cc32e753._sub._googlecast._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206090.767514	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206092.560272	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206093.089843	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206093.558034	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206093.772438	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206095.093316	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206096.568812	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206097.120035	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206099.138821	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206101.189496	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206102.801163	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206103.326728	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206105.340782	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206107.363436	CyOett3ZTSmRz1H7ml	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_spotify-connect._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206089.759052	C0OuCZ1WwSGbwhHIG1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206090.768682	C0OuCZ1WwSGbwhHIG1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206092.561029	C0OuCZ1WwSGbwhHIG1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206093.558676	C0OuCZ1WwSGbwhHIG1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206093.773170	C0OuCZ1WwSGbwhHIG1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206096.569608	C0OuCZ1WwSGbwhHIG1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206102.801905	C0OuCZ1WwSGbwhHIG1	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206151.675029	C7efmB4H2VQU7kA7Rf	192.168.1.26	55006	192.168.1.1	53	udp	42004	-	live.github.com	-	-	-	-	0	NOERROR	F	F	F	T	0	140.82.114.25	53.000000	F
+1587206194.777524	Ci4uur3rtrBA1wPW81	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206195.760795	Ci4uur3rtrBA1wPW81	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206183.872301	Cgsw9a2ZYTnUpYaWKi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206184.874313	Cgsw9a2ZYTnUpYaWKi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206186.877418	Cgsw9a2ZYTnUpYaWKi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206190.882521	Cgsw9a2ZYTnUpYaWKi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206198.891729	Cgsw9a2ZYTnUpYaWKi	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206214.902736	C7G2Ws1s4j9IrB09Sg	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206246.905422	CpTrIS3Edn8g1vXrV1	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206241.202312	Cgwl2x2jsSXpMysYY2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206242.263354	Cgwl2x2jsSXpMysYY2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206243.944105	Cgwl2x2jsSXpMysYY2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206244.960539	Cgwl2x2jsSXpMysYY2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206247.898402	Cgwl2x2jsSXpMysYY2	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206243.943357	CqA6Ax2tRd4AYvtbee	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206244.959893	CqA6Ax2tRd4AYvtbee	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206247.897242	CqA6Ax2tRd4AYvtbee	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206247.774681	CxO0KG2OVxPtDz3Zt1	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206248.721645	CxO0KG2OVxPtDz3Zt1	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206251.732203	CxO0KG2OVxPtDz3Zt1	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206247.776332	CZvSLw3dBlyqvbLpI9	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206248.722299	CZvSLw3dBlyqvbLpI9	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206251.732921	CZvSLw3dBlyqvbLpI9	fe80::1472:b96b:9202:7f8a	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206299.738179	CrhGF7WlhyNfCInf3	192.168.1.26	55006	192.168.1.1	53	udp	64111	-	d3cv4a9a9wh0bt.cloudfront.net	-	-	-	-	0	NOERROR	F	F	F	T	0	52.84.194.64,52.84.194.99,52.84.194.33,52.84.194.229	58.000000,58.000000,58.000000,58.000000	F
+1587206296.996418	CgUJdT1svLYREkYBa9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206298.010850	CgUJdT1svLYREkYBa9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206299.683699	CgUJdT1svLYREkYBa9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206300.691871	CgUJdT1svLYREkYBa9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206301.021477	CgUJdT1svLYREkYBa9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206303.701146	CgUJdT1svLYREkYBa9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206310.044630	CgUJdT1svLYREkYBa9	192.168.1.19	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206296.997113	CVL1hJ16jQUit7KIah	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206298.011849	CVL1hJ16jQUit7KIah	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206299.684543	CVL1hJ16jQUit7KIah	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206300.692713	CVL1hJ16jQUit7KIah	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206301.022424	CVL1hJ16jQUit7KIah	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206303.701806	CVL1hJ16jQUit7KIah	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_raop._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206310.045365	CVL1hJ16jQUit7KIah	fe80::1002:9ea4:cae5:bf37	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206364.107998	C2DEJ23Xrn6EWQZpZ2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206365.110029	C2DEJ23Xrn6EWQZpZ2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206367.112056	C2DEJ23Xrn6EWQZpZ2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206371.118102	C2DEJ23Xrn6EWQZpZ2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206379.127401	C2DEJ23Xrn6EWQZpZ2	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587206395.139481	CC32i31g3U1bUwSnnd	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587215957.238813	CzLBUw1GqJSLM4vCLb	192.168.1.28	5353	224.0.0.251	5353	udp	0	-	_ipp._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
+1587215959.341718	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	62220	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	T
+1587215962.183163	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	38770	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	T
+1587215963.102704	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	30416	-	graph.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	instagram.c10r.facebook.com,31.13.92.51	1871.000000,7.000000	F
+1587215959.341869	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	35081	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	T
+1587215959.179464	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	7660	-	daisy.ubuntu.com	-	-	-	-	0	NOERROR	F	F	F	T	0	162.213.33.108,162.213.33.132	85.000000,85.000000	F
+1587215962.182643	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	62019	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	T
+1587215959.341136	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	35714	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	T
+1587215959.342324	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	33683	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	T
+1587215959.081361	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	737	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	F
+1587215961.186843	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	63213	-	mtalk.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	mobile-gtalk.l.google.com,173.194.76.188	44504.000000,22.000000	F
+1587215961.717656	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	5693	-	clients4.google.com	-	-	-	-	0	NOERROR	F	F	F	T	0	clients.l.google.com,172.217.23.174	265.000000,265.000000	F
+1587215960.179507	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	45000	-	daisy.ubuntu.com	-	-	-	-	0	NOERROR	F	F	F	T	0	162.213.33.132,162.213.33.108	84.000000,84.000000	F
+1587215960.179724	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	61031	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	T
+1587215960.893905	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	40010	-	www.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	z-p42-instagram.c10r.facebook.com,185.60.216.174	2707.000000,33.000000	F
+1587215962.183800	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	47620	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	T
+1587215958.454965	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	21095	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F
+1587215960.574700	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	54136	-	edge-chat.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	instagram.c10r.facebook.com,185.60.216.52	288.000000,5.000000	F
+1587215962.182324	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	32374	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	T
+1587215958.595910	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	38199	-	graph.instagram.com	-	-	-	-	0	NOERROR	F	F	F	T	0	instagram.c10r.facebook.com,31.13.92.51	1876.000000,12.000000	F
+1587215958.776469	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	32077	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F
+1587215959.340665	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	5414	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	T
+1587215961.604613	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	21547	-	www.googleapis.com	-	-	-	-	0	NOERROR	F	F	F	T	0	172.217.18.10	253.000000	F
+1587215962.182058	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	58269	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	T
+1587215959.076713	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	7504	-	daisy.ubuntu.com	-	-	-	-	0	NOERROR	F	F	F	T	0	162.213.33.132,162.213.33.108	85.000000,85.000000	F
+1587215959.179654	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	58771	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	T
+1587215962.183358	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	54651	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	T
+1587215958.354052	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	20257	-	-	-	-	-	-	3	NXDOMAIN	F	F	F	F	0	-	-	F
+1587215959.342812	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	45556	-	-	-	-	-	-	0	NOERROR	F	F	F	F	0	-	-	T
+1587215960.965913	C9xjByoD6atUlGJP6	192.168.1.26	44184	192.168.1.1	53	udp	39289	-	live.github.com	-	-	-	-	0	NOERROR	F	F	F	T	0	140.82.114.25	10.000000	F
+#close	2020-04-18-15-19-30
