@@ -10,12 +10,20 @@
 #}
 
 event mqtt_publish (c: connection, is_orig: bool, msg_id: count, msg: MQTT::PublishMsg){
+	print c;
 	print msg;
 }
 
-#event mqtt_subscribe(c: connection, msg_id: count, topics: string_vec, requested_qos: index_vec){
-#print topics;
-#}
+event mqtt_subscribe(c: connection, msg_id: count, topics: string_vec, requested_qos: index_vec){
+	print topics;
+	print msg_id;
+}
+
+event mqtt_connect(c: connection, msg: MQTT::ConnectMsg){
+	print c$id;
+	print msg;
+}
+
 
 #event mqtt_pubrel (c: connection, is_orig: bool, msg_id: count){
 #	print c;

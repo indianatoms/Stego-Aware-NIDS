@@ -20,17 +20,21 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
 	if (c$id$orig_h in ICMP_ID)
 	{
 		if(ICMP_ID[c$id$orig_h] != id){
-			print "possible stego!";
-      			 NOTICE([$note=Possible_Steganography,
-                                  $msg = "Possible ICMP ID Steganography",
-                                  $sub = "Sequence number of ICMP is not appearing in order",
-                                  $conn = c]);
-                         Weird::weird([
-                         $ts=network_time(),
-                         $name="Possible_Staeganography",
-                         $conn=c,
-                         $notice=T]); #check whats going on over here
-
+			if(ICMP_ID[c$id$orig_h]+1 < id){
+				print "possible stego!";
+      			 	NOTICE([$note=Possible_Steganography,
+                                  	$msg = "Possible ICMP ID Steganography",
+                                  	$sub = "ID number is changing of ICMP is not appearing in order",
+                                  	$conn = c]);
+                         	Weird::weird([
+                         	$ts=network_time(),
+                         	$name="Possible_Staeganography",
+                         	$conn=c,
+                         	$notice=T]); #check whats going on over here
+			}
+			else{
+				ICMP_ID[c$id$orig_h] = id;
+			}
 		}
 	}
 	else{

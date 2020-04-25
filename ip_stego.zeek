@@ -1,18 +1,7 @@
  global TOS: table[addr] of count = {};
  global TOS_timer : table[addr] of time = {};
  global TOS_counter : table[addr] of count = {};
- 
 
- event zeek_init()
-            {
-            	 print "Hello, World!";
-            }
-  
-  
-  event zeek_done()
-            { 
-         	 print "Goodbye, World!";
-            }
 event new_packet (c: connection, p: pkt_hdr){
 	if(p ?$ ip){
 		if( p$ip$src in TOS){

@@ -3,8 +3,10 @@
 #empty_field	(empty)
 #unset_field	-
 #path	dhcp
-#open	2020-04-20-15-28-05
+#open	2020-04-25-20-45-25
 #fields	ts	uids	client_addr	server_addr	mac	host_name	client_fqdn	domain	requested_addr	assigned_addr	lease_time	client_message	server_message	msg_types	duration
 #types	time	set[string]	addr	addr	string	string	string	string	addr	addr	interval	string	string	vector[string]	interval
-1587389271.237229	CBwBPW1HwPvr6Vmi35	192.168.1.107	-	3c:a9:f4:13:8f:d8	Dell-T-L	-	-	-	-	-	-	-	INFORM	0.000000
-#close	2020-04-20-15-28-05
+1587840308.669434	CSvV022qAm5hwPkfDd	192.168.1.107	-	3c:a9:f4:13:8f:d8	Dell-T-L	-	-	-	-	-	-	-	INFORM	0.000000
+1587840369.305092	CQ0pxQMhly83oXCgj	192.168.1.107	-	3c:a9:f4:13:8f:d8	Dell-T-L	-	-	-	-	-	-	-	INFORM	0.000000
+1587840430.046872	Ch5MlM35zAzCvqv0x9	192.168.1.107	-	3c:a9:f4:13:8f:d8	Dell-T-L	-	-	-	-	-	-	-	INFORM	0.000000
+#close	2020-04-25-20-47-24
