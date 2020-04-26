@@ -1,12 +1,5 @@
-type TOS: record {
-    v: int;
-    t: time;
-    c: count;
-};
-
- global t_TOS: table[addr] of TOS = {};
-# global TOS_timer : table[addr] of time = {};
-# global TOS_counter : table[addr] of count = {};
+@load record.zeek
+global t_TOS: table[addr] of VTC = {};
 
 event new_packet (c: connection, p: pkt_hdr){
 	if(p ?$ ip){
@@ -27,7 +20,7 @@ event new_packet (c: connection, p: pkt_hdr){
 			}
 		}
 		else{
-			t_TOS[p$ip$src] = TOS($v = p$ip$tos, $t = network_time(), $c = 0);
+			t_TOS[p$ip$src] = VTC($v = p$ip$tos, $t = network_time(), $c = 0);
 		}
 	}
 }

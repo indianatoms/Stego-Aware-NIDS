@@ -3,13 +3,8 @@
 #empty_field	(empty)
 #unset_field	-
 #path	dns
-#open	2020-04-25-20-45-07
+#open	2020-04-26-13-36-13
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected
 #types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool
-1587840287.456449	Cqrz122mqBXQUT97j9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1587840295.443976	Cqrz122mqBXQUT97j9	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1587840316.947598	CuX4RE4V4mzFymBfxj	192.168.1.12	5353	224.0.0.251	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1587840316.947723	ChugQ92KO6gW1E1vSk	fe80::8db:e313:c314:b279	5353	ff02::fb	5353	udp	0	-	_sleep-proxy._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-1587840330.060092	CttEtM2yHoo8BFBpj4	192.168.1.28	57784	192.168.1.1	53	udp	44062	-	connectivity-check.ubuntu.com	-	-	-	-	0	NOERROR	F	F	F	T	0	35.224.99.156,35.222.85.5	294.000000,294.000000	F
-1587840343.676557	CjBIU23kB45loC6u3	192.168.1.1	5353	224.0.0.251	5353	udp	0	-	_services._dns-sd._udp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F
-#close	2020-04-25-20-47-24
+1587900966.596428	CmrT17WvK54vcEFDb	192.168.1.28	49360	192.168.1.1	53	udp	43731	-	connectivity-check.ubuntu.com	-	-	-	-	0	NOERROR	F	F	F	T	0	35.224.99.156,35.222.85.5	466.000000,466.000000	F
+#close	2020-04-26-13-36-13

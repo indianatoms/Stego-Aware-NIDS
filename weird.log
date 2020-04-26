@@ -3,14 +3,11 @@
 #empty_field	(empty)
 #unset_field	-
 #path	weird
-#open	2020-04-25-20-44-49
+#open	2020-04-26-13-36-06
 #fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer
 #types	time	string	addr	port	addr	port	string	string	bool	string
-1587840289.292528	CMogid1pVBgEjcTnpk	192.168.1.107	8808	192.168.1.28	80	SYN_with_data	-	F	zeek
-1587840291.756854	-	-	-	-	-	unknown_protocol	2	F	zeek
-1587840299.494994	CxNCTE3PwmPXFmyVK2	192.168.1.107	8808	192.168.1.28	80	data_before_established	-	F	zeek
-1587840304.433546	-	-	-	-	-	non_ip_packet_in_ethernet	-	F	zeek
-1587840330.050937	CttEtM2yHoo8BFBpj4	192.168.1.28	57784	192.168.1.1	53	bad_UDP_checksum	-	F	zeek
-1587840331.053992	CaK8xDgcOZpJjFKwa	192.168.1.28	33458	35.224.99.156	80	bad_TCP_checksum	-	F	zeek
-1587840331.190298	CaK8xDgcOZpJjFKwa	192.168.1.28	33458	35.224.99.156	80	active_connection_reuse	-	F	zeek
-#close	2020-04-25-20-47-24
+1587900966.589465	CmrT17WvK54vcEFDb	192.168.1.28	49360	192.168.1.1	53	bad_UDP_checksum	-	F	zeek
+1587900967.590430	C1cnYQ1vjyEc6oLPO9	192.168.1.28	33694	35.224.99.156	80	bad_TCP_checksum	-	F	zeek
+1587900967.730178	C1cnYQ1vjyEc6oLPO9	192.168.1.28	33694	35.224.99.156	80	active_connection_reuse	-	F	zeek
+1587900970.810834	-	-	-	-	-	unknown_protocol	2	F	zeek
+#close	2020-04-26-13-36-13
