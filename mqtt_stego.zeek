@@ -1,38 +1,32 @@
 @load policy/protocols/mqtt
+@load record.zeek
 
-#event mqtt_connect  (c: connection, msg: MQTT::ConnectMsg){
-#	print c;
-#}
+global MQTT_id : table[addr] of STC = {};
+global MQTT_user : table[addr] of STC = {};
+global MQTT_pass : table[addr] of STC = {};
+global MQTT_alive : table[addr] of ITC = {};
 
-#event mqtt_puback(c: connection, is_orig: bool, msg_id: count)
-#{
-#	print c;
-#}
 
 event mqtt_publish (c: connection, is_orig: bool, msg_id: count, msg: MQTT::PublishMsg){
-	print c;
-	print msg;
+	print "pub";
+	print c$id$orig_h;
+	print msg$payload;
+	print find_entropy(msg$payload)$entropy;
 }
 
 event mqtt_subscribe(c: connection, msg_id: count, topics: string_vec, requested_qos: index_vec){
-	print topics;
-	print msg_id;
+	for (i in topics)
+	{
+		print topics[i];
+	}
 }
+
 
 event mqtt_connect(c: connection, msg: MQTT::ConnectMsg){
-	print c$id;
-	print msg;
+         print "con";
+         check_freqency(MQTT_id,c$id$orig_h,msg$client_id,"MQTT ID CHANGING TOO FREQUENTLY");
+         check_freqency(MQTT_user,c$id$orig_h,msg$username,"MQTT USER CHANGING TOO FREQUENTLY");
+         check_freqency(MQTT_pass,c$id$orig_h,msg$password,"MQTT PASSWORD CHANGING TOO FREQUENTLY");
+         check_freqency_t(MQTT_alive,c$id$orig_h,msg$keep_alive,"MQTT KEEP ALIVE CHANGING TOO FREQUENTLY");
 }
 
-
-#event mqtt_pubrel (c: connection, is_orig: bool, msg_id: count){
-#	print c;
-#}
-
-#event mqtt_puback (c: connection, is_orig: bool, msg_id: count){
-#	print c;
-#}
-
-#event MQTT::log_mqtt(rec: MQTT::ConnectInfo){
-#	print rec;
-#}
