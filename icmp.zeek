@@ -1,3 +1,4 @@
+@load policy/tuning/json-logs.zeek
 global old_seq = 0;
 global old_id : count = 0;
 global ICMP_ID : table[addr] of count = {};
@@ -28,7 +29,7 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
                                   	$conn = c]);
                          	Weird::weird([
                          	$ts=network_time(),
-                         	$name="Possible_Staeganography",
+                         	$name="Possible_Staeganography ID",
                          	$conn=c,
                          	$notice=T]); #check whats going on over here
 			}
@@ -42,18 +43,20 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
 	}
 	
 	if (id in id_seq){
-		if (id_seq[id]+1 == seq){
+		if ( seq == 0 || id_seq[id]+1 == seq){
 			id_seq[id] = seq;
 		}
 		else{
 			print "Possible seq stego";
 			NOTICE([$note=Possible_Steganography,
-                                    $msg = "Possible ICMP ID Steganography",
+				    $conn = c,
+				    $id = c$id,
+                                    $msg = "Possible ICMP SEQ  Steganography",
                                     $sub = "Sequence number of ICMP is not appearing in order",
-                                    $conn = c]);
+				    $ts = network_time()]);
                         Weird::weird([
                         $ts=network_time(),
-                        $name="Possible_Staeganography",
+                        $name="Possible_Staeganography SEQ",
                         $conn=c,
                         $notice=T]); #check whats going on over here
 
