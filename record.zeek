@@ -28,6 +28,12 @@ type BTC: record {
      c: count;
 };
 
+type IAT: record {
+     c: count;
+     v: vector of interval;
+     t: time;
+};
+
 function check_freqency(tab: table[addr] of STC, address: addr, value: string, name: string){
         if(address in tab){
                 if(tab[address]$s != value)

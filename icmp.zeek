@@ -1,6 +1,7 @@
 @load policy/tuning/json-logs.zeek
-global old_seq = 0;
-global old_id : count = 0;
+@load iat.zeek
+
+global IAT_tab : table[addr] of IAT = {};
 global ICMP_ID : table[addr] of count = {};
 global id_seq : table[count] of count = {};
 
@@ -12,11 +13,10 @@ redef Weird::actions: table[string] of Weird::Action += {
 
 
 event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, payload: string)
-
         {
-	
-        print "Current seq number is : ",seq;
-	print "Current id nuber is : ",id;
+	cheek_intervals(IAT_tab,c$id$orig_h);
+#        print "Current seq number is : ",seq;
+#	print "Current id nuber is : ",id;
 	print c$id$orig_h;
 	if (c$id$orig_h in ICMP_ID)
 	{
@@ -59,7 +59,7 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
                         $name="Possible_Staeganography SEQ",
                         $conn=c,
                         $notice=T]); #check whats going on over here
-
+			id_seq[id] = seq;
 		}
 	}
 	else{	
