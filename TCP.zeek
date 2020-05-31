@@ -1,4 +1,5 @@
 @load record.zeek
+@load policy/tuning/json-logs.zeek
 
 global id_changes_counter = 0;
 global TCP_Urgent = F;
@@ -10,10 +11,10 @@ global TCP_port: table[addr] of VTC = {};
 global local_address = 192.168.1.26;
 
 #Add new notice type
-redef enum Notice::Type += { Possible_Steganography };
-redef Weird::actions: table[string] of Weird::Action += {
-	["Possible_Steganography"] = Weird::ACTION_NOTICE,
-};
+#redef enum Notice::Type += { Possible_Steganography };
+#redef Weird::actions: table[string] of Weird::Action += {
+#	["Possible_Steganography"] = Weird::ACTION_NOTICE,
+#};
 
 
 event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string)
@@ -74,12 +75,12 @@ event new_packet (c: connection, p: pkt_hdr){
 					TCP_seq[p$ip$src]$c -= 1;
 					#print "DOWN!";
 					if(TCP_seq[p$ip$src]$c == -10){
-						print("possible stego");
+						print("possible stego seq");
 						NOTICE([$note=Possible_Steganography,
                 		                   $msg = "Possible seq numbe TCP steganography",
         	                	           $sub = "SEQ number not increasing",
 	                                	   $conn = c]);
-
+						TCP_seq[p$ip$src]$c = 0;
 					}
 				}
 			TCP_seq[p$ip$src]$v = p$tcp$seq;

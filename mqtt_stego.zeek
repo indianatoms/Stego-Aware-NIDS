@@ -8,22 +8,29 @@ global MQTT_alive : table[addr] of ITC = {};
 global MQTT_clean : table[addr] of BTC = {};
 
 
-
 event mqtt_publish (c: connection, is_orig: bool, msg_id: count, msg: MQTT::PublishMsg){
-#	print "pub";
-#	print c$id$orig_h;
-#	print msg$payload;
+	print msg$payload;
 #	print find_entropy(msg$payload)$entropy;
+	if (find_entropy(msg$payload)$entropy > 3.5){
+		NOTICE([$note=Possible_Steganography,
+			$conn=c,
+                        $msg = "Possible steganogra"]);
+        }
 	check_freqency_b(MQTT_clean,c$id$orig_h,msg$retain,"MQTT RETAIN MESSAGE");
 	print msg_id;
 }
 
 event mqtt_subscribe(c: connection, msg_id: count, topics: string_vec, requested_qos: index_vec){
-#	for (i in topics)
-#	{
-#		print topics[i];
-#	}
-	print "sub";
+	print "subscribe";
+	for (i in topics)
+	{
+		#print topics[i];
+		#print find_entropy(topics[i])$entropy;
+		if (find_entropy(topics[i])$entropy> 3.5){
+			NOTICE([$note=Possible_Steganography,
+				$conn=c,
+				$msg = "Possible steganogra"]);
+	}
 	print msg_id;
 }
 
