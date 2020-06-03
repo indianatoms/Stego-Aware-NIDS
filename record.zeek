@@ -34,15 +34,17 @@ type IAT: record {
      t: time;
 };
 
-function check_freqency(tab: table[addr] of STC, address: addr, value: string, name: string){
+function check_freqency(tab: table[addr] of STC, address: addr, value: string, name: string, period: interval &default=1min, threshold: int &default=10){
         if(address in tab){
+		print tab[address]$s;
+		print value;
                 if(tab[address]$s != value)
                                 {
                                 #print "new value for same address";
-                                if(network_time() - tab[address]$t < 1min){
+                                if(network_time() - tab[address]$t < period){
                                         tab[address]$c +=1 ;
                                         print tab[address]$c;
-                                        if(tab[address]$c >= 10){
+                                        if(tab[address]$c >= threshold){
                                                 NOTICE([$note=Possible_Steganography,
                                                         $msg = "Possible steganography",
                                                         $sub = name]);

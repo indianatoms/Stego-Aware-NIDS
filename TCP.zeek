@@ -10,13 +10,6 @@ global TCP_port: table[addr] of VTC = {};
 
 global local_address = 192.168.1.26;
 
-#Add new notice type
-#redef enum Notice::Type += { Possible_Steganography };
-#redef Weird::actions: table[string] of Weird::Action += {
-#	["Possible_Steganography"] = Weird::ACTION_NOTICE,
-#};
-
-
 event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string)
 	{
 	for (i in flags)

@@ -30,6 +30,7 @@ event mqtt_subscribe(c: connection, msg_id: count, topics: string_vec, requested
 			NOTICE([$note=Possible_Steganography,
 				$conn=c,
 				$msg = "Possible steganogra"]);
+		}
 	}
 	print msg_id;
 }
