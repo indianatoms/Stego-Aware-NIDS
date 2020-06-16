@@ -6,7 +6,6 @@ global ICMP_ID : table[addr] of count = {};
 global id_seq : table[count] of count = {};
 
 #Add new notice type
-redef enum Notice::Type += { Possible_Steganography };
 redef Weird::actions: table[string] of Weird::Action += {
 	["Possible_Steganography"] = Weird::ACTION_NOTICE,
 };
@@ -14,9 +13,7 @@ redef Weird::actions: table[string] of Weird::Action += {
 
 event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, payload: string)
         {
-	cheek_intervals(IAT_tab,c$id$orig_h);
-#        print "Current seq number is : ",seq;
-#	print "Current id nuber is : ",id;
+	cheek_intervals(IAT_tab,c$id$orig_h,c);
 	print c$id$orig_h;
 	if (c$id$orig_h in ICMP_ID)
 	{

@@ -1,7 +1,10 @@
-redef enum Notice::Type += { Possible_Steganography };
+@load policy/tuning/json-logs.zeek
+#redef enum Notice::Type += { Possible_Steganography };
 redef Weird::actions: table[string] of Weird::Action += {
          ["Possible_Steganography"] = Weird::ACTION_NOTICE,
 };
+
+global local_address : addr = 192.168.0.235;
 
 type VTC: record {
     v: int;
@@ -46,6 +49,7 @@ function check_freqency(tab: table[addr] of STC, address: addr, value: string, n
                                         print tab[address]$c;
                                         if(tab[address]$c >= threshold){
                                                 NOTICE([$note=Possible_Steganography,
+							$ts=network_time(),
                                                         $msg = "Possible steganography",
                                                         $sub = name]);
                                                 }
@@ -72,6 +76,7 @@ function check_freqency_t(tab: table[addr] of ITC, address: addr, value: interva
                                          print tab[address]$c;
                                          if(tab[address]$c >= 10){
                                                  NOTICE([$note=Possible_Steganography,
+							 $ts=network_time(),
                                                          $msg = "Possible steganography",
                                                          $sub = name]);
                                                  }
@@ -98,6 +103,7 @@ function check_freqency_b(tab: table[addr] of BTC, address: addr, value: bool, n
                                          print tab[address]$c;
                                          if(tab[address]$c >= 10){
                                                  NOTICE([$note=Possible_Steganography,
+							 $ts=network_time(),
                                                          $msg = "Possible steganography",
                                                          $sub = name]);
                                                  }

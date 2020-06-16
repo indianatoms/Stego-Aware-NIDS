@@ -8,8 +8,6 @@ global old_seq_TCP = 0;
 global TCP_seq : table[addr] of VTC = {};
 global TCP_port: table[addr] of VTC = {};
 
-global local_address = 192.168.1.26;
-
 event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: count, len: count, payload: string)
 	{
 	for (i in flags)
@@ -24,6 +22,11 @@ event tcp_packet (c: connection, is_orig: bool, flags: string, seq: count, ack: 
 			if (i == "R" && payload != "")
 				{
 				print "Possible Stego, the RST flag is up and the payload is not empty.";
+				NOTICE([$note=Possible_Steganography,
+					$msg = "Possible RST/payload TCP steganography",
+					$ts=network_time(),
+					$sub = "The RST flag is set and payload is not empty.",
+					$conn = c]);
 				}
 		}
 	old_seq_TCP = seq;
@@ -37,6 +40,7 @@ event new_packet (c: connection, p: pkt_hdr){
 			print "Possible Reserved Bits Stego";
 			NOTICE([$note=Possible_Steganography,
                                   $msg = "Possible reserved bits TCP steganography",
+				  $ts=network_time(),
                                   $sub = "TCP reserved bits are not equal to zero",
                                   $conn = c]);
                         Weird::weird([
@@ -52,7 +56,7 @@ event new_packet (c: connection, p: pkt_hdr){
 		}
 	}
 
-	if(p ?$ tcp){
+	if(p ?$ ip && p ?$ tcp){
 		if(p$ip$src in TCP_seq && p$ip$src != local_address)
 		{
 			#print "same address";
@@ -72,6 +76,7 @@ event new_packet (c: connection, p: pkt_hdr){
 						NOTICE([$note=Possible_Steganography,
                 		                   $msg = "Possible seq numbe TCP steganography",
         	                	           $sub = "SEQ number not increasing",
+						   $ts=network_time(),
 	                                	   $conn = c]);
 						TCP_seq[p$ip$src]$c = 0;
 					}
@@ -82,40 +87,37 @@ event new_packet (c: connection, p: pkt_hdr){
 		{
 			TCP_seq[p$ip$src] = VTC($v = p$tcp$seq, $t = network_time(), $c = 0);
 		}
-
-		if(p$ip$src in TCP_port && p$ip$src != local_address){
-		#	print "same address";
-				if(TCP_port[p$ip$src]$v != port_to_count(p$tcp$sport))
-				{
-					print "new source port for same address";
-						if(network_time() - TCP_port[p$ip$src]$t < 1min){
-							TCP_port[p$ip$src]$c += 1;
-							print TCP_port[p$ip$src]$c;
-							if(TCP_port[p$ip$src]$c >= 10){
-									print "possible port stego";
-									print p$ip$src;
-		      					NOTICE([$note=Possible_Steganography,
-                                                     		$msg = "Possible source port TCP steganography",
-                                                     		$sub = "Source port number changing too requently",
-                                                     		$conn = c]);
-							}
-						}
-						else{
-							TCP_port[p$ip$src]$t = network_time();
-							TCP_port[p$ip$src]$c = 0;
-						}
-					TCP_port[p$ip$src]$v = port_to_count(p$tcp$sport);
-				}
-		}	
-		else if(p$ip$src != local_address){
-		#	print "new address";
-			TCP_port[p$ip$src] = VTC($v = port_to_count(p$tcp$sport), $t = network_time(), $c = 0);
-		}
-			
-
-
-
 	}
+
+#		if(p$ip$src in TCP_port && p$ip$src != local_address){
+#		#	print "same address";
+#				if(TCP_port[p$ip$src]$v != port_to_count(p$tcp$sport))
+#				{
+#					print "new source port for same address";
+#						if(network_time() - TCP_port[p$ip$src]$t < 1min){
+#							TCP_port[p$ip$src]$c += 1;
+#							print TCP_port[p$ip$src]$c;
+#							if(TCP_port[p$ip$src]$c >= 10){
+#									print "possible port stego";
+#									print p$ip$src;
+#		      					NOTICE([$note=Possible_Steganography,
+#                                                    		$msg = "Possible source port TCP steganography",
+#                                                   		$sub = "Source port number changing too requently",
+#								$ts=network_time(),
+#                                                    		$conn = c]);
+#							}
+#						}
+#						else{
+#							TCP_port[p$ip$src]$t = network_time();
+#							TCP_port[p$ip$src]$c = 0;
+#						}
+#					TCP_port[p$ip$src]$v = port_to_count(p$tcp$sport);
+#				}
+#		}	
+#		else if(p$ip$src != local_address){
+#		#	print "new address";
+#			TCP_port[p$ip$src] = VTC($v = port_to_count(p$tcp$sport), $t = network_time(), $c = 0);
+#		}
 	#Unset urgent pointer
 	TCP_Urgent = F;
 }

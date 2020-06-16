@@ -10,7 +10,13 @@ event new_packet (c: connection, p: pkt_hdr){
 					if(t_TOS[p$ip$src]$c > 5)
                                                  {
                                                      print "possible stego or someone is using VoIP too much :-)", t_TOS[p$ip$src]$c;
-                                                 }
+                                                     NOTICE([$note=Possible_Steganography,
+							    $conn = c,
+		                                            $id = c$id,
+                                                            $msg = "Possible  Steganography",
+                                                            $sub = "IP DSCP/ESN numbers are changing too often",
+                                                            $ts = network_time()]);
+						 }
 				}
 				else
 				{

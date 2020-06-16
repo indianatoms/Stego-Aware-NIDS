@@ -1,4 +1,7 @@
 #inter arival time
+@load policy/tuning/json-logs.zeek
+redef enum Notice::Type += { Possible_Steganography };
+
 type IAT: record {
      c: count;
      v: vector of interval;
@@ -13,7 +16,7 @@ function variance(vec: vector of interval){
 	for (i in vec){
 		sum += |vec[i]|;
 	}
-	avg = sum / |vec|;
+	avg = |sum/vec|;
 	for (i in vec){
 #		print |(|vec[i]|-avg)|;
 		vec2[i] = |(|vec[i]|-avg)| * |(|vec[i]|-avg)|;
@@ -23,36 +26,43 @@ function variance(vec: vector of interval){
 #		 print vec2[i];
 		 sum += vec2[i];
 	}
-	var = sum/|vec|;
+	var = |sum/vec|;
 	print "varinace: ",var;
 }
 
-function cheek_intervals(tab: table[addr] of IAT, address: addr){
+function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection){
 	if(address in tab){
 		if(network_time() - tab[address]$t < 2sec){
 			tab[address]$v += network_time() - tab[address]$t;
 		}
 		tab[address]$t = network_time();
+		print tab[address]$c;
 		tab[address]$c += 1;
 		if(tab[address]$c > 10){
 			local vo: vector of interval = sort(tab[address]$v, function(a: interval, b:interval): int {return a > b ? 1 : -1;} );
 			for (i in vo){
 				print "interval: ",|vo[i]|;
 				if (i != |vo|-1){
-#					print "delta: ",|vo[i]-vo[i+1]|;
-#					print "devided ",|(|vo[i]-vo[i+1]|)/vo[i]|;
+					print "delta: ",|vo[i]-vo[i+1]|;
+					print "devided ",|(|vo[i]-vo[i+1]|)/vo[i]|;
 					if(|(|vo[i]-vo[i+1]|)/vo[i]| > 0.5){
 						print "possible stego";
+						NOTICE([$note=Possible_Steganography,
+                                                        $msg = "Possible steganography",
+							$conn = c,
+							$ts = network_time(),
+                                                        $sub = "The relaive difference beetwen adjancent intervals is significantly high"]);
+                                                }
+
 ##Ograniczyć o wartości krańcowe
 					}
 				}
-			}
 			variance(tab[address]$v);
-			tab[address]$c = 0;
 			print "new set";
+			tab[address]$c = 0;
 			tab[address]$v = vector();
+			}
 		}
-	}
 	else{
 		tab[address] = IAT($c = 0, $t = network_time(), $v = vector());
 	}
