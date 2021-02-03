@@ -1,5 +1,6 @@
 @load record.zeek
 
+global packet_counter = 0;
 global SIP_callid : table[addr] of STC = {};
 global SIP_cseq : table[addr] of STC = {};
 global SIP_MF : table[addr] of STC = {};

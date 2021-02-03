@@ -4,16 +4,20 @@
 global IAT_tab : table[addr] of IAT = {};
 global ICMP_ID : table[addr] of count = {};
 global id_seq : table[count] of count = {};
+global t : time;
 
 #Add new notice type
 redef Weird::actions: table[string] of Weird::Action += {
 	["Possible_Steganography"] = Weird::ACTION_NOTICE,
 };
 
+event zeek_init() {
+	t = current_time()
+}
 
 event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, payload: string)
-        {
-	cheek_intervals(IAT_tab,c$id$orig_h,c);
+{
+	cheek_intervals(IAT_tab,c$id$orig_h,c,t);
 	print c$id$orig_h;
 	if (c$id$orig_h in ICMP_ID)
 	{
@@ -28,7 +32,7 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
                          	$ts=network_time(),
                          	$name="Possible_Staeganography ID",
                          	$conn=c,
-                         	$notice=T]); #check whats going on over here
+                         	$notice=T]);
 			}
 			else{
 				ICMP_ID[c$id$orig_h] = id;
@@ -55,7 +59,7 @@ event icmp_echo_request(c: connection, icmp: icmp_conn, id: count, seq: count, p
                         $ts=network_time(),
                         $name="Possible_Staeganography SEQ",
                         $conn=c,
-                        $notice=T]); #check whats going on over here
+                        $notice=T]);
 			id_seq[id] = seq;
 		}
 	}

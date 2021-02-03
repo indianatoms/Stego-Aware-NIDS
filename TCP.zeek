@@ -56,6 +56,7 @@ event new_packet (c: connection, p: pkt_hdr){
 		}
 	}
 
+	TCP_seq[p$ip$src]$a += 1;
 	if(p ?$ ip && p ?$ tcp){
 		if(p$ip$src in TCP_seq && p$ip$src != local_address)
 		{
@@ -65,13 +66,14 @@ event new_packet (c: connection, p: pkt_hdr){
 					TCP_seq[p$ip$src]$c += 1;
 					if(TCP_seq[p$ip$src]$c >= 20){
 						TCP_seq[p$ip$src]$c = 0;
+						TCP_seq[p$ip$src]$a = 0;
 					}
 				}
 			else
 				{
 					TCP_seq[p$ip$src]$c -= 1;
 					#print "DOWN!";
-					if(TCP_seq[p$ip$src]$c == -10){
+					if( |TCP_seq[p$ip$src]$c / TCP_seq[p$ip$src]$a| > 0.1){
 						print("possible stego seq");
 						NOTICE([$note=Possible_Steganography,
                 		                   $msg = "Possible seq numbe TCP steganography",
@@ -79,13 +81,14 @@ event new_packet (c: connection, p: pkt_hdr){
 						   $ts=network_time(),
 	                                	   $conn = c]);
 						TCP_seq[p$ip$src]$c = 0;
+						TCP_seq[p$ip$src]$a = 0;
 					}
 				}
 			TCP_seq[p$ip$src]$v = p$tcp$seq;
 		}
 		else if(p$ip$src != local_address)
 		{
-			TCP_seq[p$ip$src] = VTC($v = p$tcp$seq, $t = network_time(), $c = 0);
+			TCP_seq[p$ip$src] = VTC($v = p$tcp$seq, $t = network_time(), $c = 0, $a=0);
 		}
 	}
 

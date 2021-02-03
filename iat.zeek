@@ -28,17 +28,21 @@ function variance(vec: vector of interval){
 	}
 	var = |sum/vec|;
 	print "varinace: ",var;
+	#here you can add additional parameter to check the variance
 }
 
-function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection){
+function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection, t: time){
 	if(address in tab){
 		if(network_time() - tab[address]$t < 2sec){
 			tab[address]$v += network_time() - tab[address]$t;
 		}
+		#check current time
 		tab[address]$t = network_time();
+		#another packet cought
 		print tab[address]$c;
 		tab[address]$c += 1;
-		if(tab[address]$c > 10){
+		#after one minute check the interval 
+		if(tab[address]$t - t > 1min){
 			local vo: vector of interval = sort(tab[address]$v, function(a: interval, b:interval): int {return a > b ? 1 : -1;} );
 			for (i in vo){
 				print "interval: ",|vo[i]|;
@@ -48,19 +52,19 @@ function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection){
 					if(|(|vo[i]-vo[i+1]|)/vo[i]| > 0.5){
 						print "possible stego";
 						NOTICE([$note=Possible_Steganography,
-                                                        $msg = "Possible steganography",
+                            $msg = "Possible steganography",
 							$conn = c,
 							$ts = network_time(),
-                                                        $sub = "The relaive difference beetwen adjancent intervals is significantly high"]);
+                            $sub = "The relaive difference beetwen adjancent intervals is significantly high"]);
                                                 }
-
-##Ograniczyć o wartości krańcowe
 					}
 				}
 			variance(tab[address]$v);
 			print "new set";
 			tab[address]$c = 0;
 			tab[address]$v = vector();
+			#set time to last recived time value.
+			t = tab[address]$t
 			}
 		}
 	else{
