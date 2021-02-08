@@ -1,5 +1,5 @@
 @load policy/protocols/mqtt
-@load record.zeek
+@load vtcs.zeek
 
 global MQTT_id : table[addr] of STC = {};
 global MQTT_user : table[addr] of STC = {};

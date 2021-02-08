@@ -1,4 +1,4 @@
-@load record.zeek
+@load vtcs.zeek
 
 global packet_counter = 0;
 global SIP_callid : table[addr] of STC = {};
