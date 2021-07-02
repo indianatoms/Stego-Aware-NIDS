@@ -13,6 +13,7 @@ function variance(vec: vector of interval){
 	local avg : double = 0;
 	local var : double = 0;
 	local vec2: vector of double;
+
 	for (i in vec){
 		sum += |vec[i]|;
 	}
@@ -64,7 +65,7 @@ function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection, 
 			tab[address]$c = 0;
 			tab[address]$v = vector();
 			#set time to last recived time value.
-			t = tab[address]$t
+			t = tab[address]$t;
 			}
 		}
 	else{

@@ -7,6 +7,13 @@ global MQTT_pass : table[addr] of STC = {};
 global MQTT_alive : table[addr] of ITC = {};
 global MQTT_clean : table[addr] of BTC = {};
 
+global counter : int;
+
+
+event zeek_init() {
+	counter = 0;
+}
+
 event mqtt_publish (c: connection, is_orig: bool, msg_id: count, msg: MQTT::PublishMsg){
 	print msg$payload;
 #	print find_entropy(msg$payload)$entropy;
@@ -17,11 +24,12 @@ event mqtt_publish (c: connection, is_orig: bool, msg_id: count, msg: MQTT::Publ
 			$sub = "The entrophy of MQTT payload is too high",
                         $msg = "Possible steganography"]);
         }
-	check_freqency_b(MQTT_clean,c$id$orig_h,msg$retain,"MQTT RETAIN MESSAGE",packet_counter);
+	check_freqency_b(MQTT_clean,c$id$orig_h,msg$retain,"MQTT RETAIN MESSAGE");
 	print msg_id;
 }
 
 event mqtt_subscribe(c: connection, msg_id: count, topics: string_vec, requested_qos: index_vec){
+
 	print "subscribe";
 	for (i in topics)
 	{
@@ -39,10 +47,13 @@ event mqtt_subscribe(c: connection, msg_id: count, topics: string_vec, requested
 }
 
 event mqtt_connect(c: connection, msg: MQTT::ConnectMsg){
-        check_freqency(MQTT_id,c$id$orig_h,msg$client_id,"MQTT ID CHANGING TOO FREQUENTLY",packet_counter);
-        check_freqency(MQTT_user,c$id$orig_h,msg$username,"MQTT USER CHANGING TOO FREQUENTLY",packet_counter);
-        check_freqency(MQTT_pass,c$id$orig_h,msg$password,"MQTT PASSWORD CHANGING TOO FREQUENTLY",packet_counter);
-        check_freqency_t(MQTT_alive,c$id$orig_h,msg$keep_alive,"MQTT KEEP ALIVE CHANGING TOO FREQUENTLY",packet_counter);
-	 	check_freqency_b(MQTT_clean,c$id$orig_h,msg$clean_session,"MQTT CLEAN SESSION",packet_counter);
+		counter = counter + 1;
+		print "===============";
+		print counter;
+        check_freqency(MQTT_id,c$id$orig_h,msg$client_id,"MQTT ID CHANGING TOO FREQUENTLY");
+        check_freqency(MQTT_user,c$id$orig_h,msg$username,"MQTT USER CHANGING TOO FREQUENTLY");
+        check_freqency(MQTT_pass,c$id$orig_h,msg$password,"MQTT PASSWORD CHANGING TOO FREQUENTLY");
+        check_freqency_t(MQTT_alive,c$id$orig_h,msg$keep_alive,"MQTT KEEP ALIVE CHANGING TOO FREQUENTLY");
+	 	check_freqency_b(MQTT_clean,c$id$orig_h,msg$clean_session,"MQTT CLEAN SESSION");
 }
 

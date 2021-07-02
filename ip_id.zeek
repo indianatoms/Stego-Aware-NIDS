@@ -1,43 +1,58 @@
-@load record.zeek
+@load vtcs.zeek
 
-global t_IP : table[addr] of VTC = {};
+#global id : ID;
+global t_IP : table[ID] of VTC = {};
 #local local_address : addr = 192.168.0.235;
-global packet_counter = 0;
+global counter : int;
+
+
+event zeek_init() {
+	counter = 0;
+}
+
 
 event new_packet (c: connection, p: pkt_hdr){
-        t_IP[p$ip$src]$a += 1;
-        if(p ?$ ip){
-                if(p$ip$src in t_IP){
-                        print  p$ip$id, p$ip$src, t_IP[p$ip$src]$v;
-                        if(p$ip$id < t_IP[p$ip$src]$v){
-                                #print "The value went down by" ,|p$ip$id - t_IP[p$ip$src]$v|;
-                                #print "DOWN!" , p$ip$src, "counter", t_IP[p$ip$src]$c;
-                                t_IP[p$ip$src]$v = p$ip$id;
-                                if(network_time() - t_IP[p$ip$src]$t  < 1min){
-                                  t_IP[p$ip$src]$c += 1;
-                                  if(|t_IP[p$ip$src]$c / t_IP[p$ip$src]$a| > 0.1){
+        if(p ?$ ip){	
+                counter = counter + 1;
+	        print "===============";
+	        print counter;
+
+                id = ID($src = p$ip$src, $dst = p$ip$dst);
+                if(id in t_IP){
+                        t_IP[id]$a += 1;
+                        #print  id, t_IP[id]$v;
+                        if(p$ip$id < t_IP[id]$v){
+                                #print "DOWN!" , p$ip$src, "counter", t_IP[id]$c;
+                                t_IP[id]$v = p$ip$id;
+                                if(network_time() - t_IP[id]$t  < 1min){
+                                  t_IP[id]$c += 1;
+                                  if(|t_IP[id]$a / t_IP[id]$c| < 10){
+                                      print  t_IP[id]$c,  t_IP[id]$a;       
                                       print "possible IP Id stego", p$ip$src;
                                       NOTICE([$note=Possible_Steganography,
 				      $ts = network_time(),
                                       $msg = "Possible IP ID Steganography",
                                       $sub = "ID number of IP decreased unexpected number of times",
                                       $conn = c]);
-
+                                        t_IP[id]$c = 0;
+                                        t_IP[id]$t = network_time();
+                                        t_IP[id]$a = 100;
+                                        print "Reset Data";
                                   }
                                 }
 				else{
-                                  t_IP[p$ip$src]$c = 0;
-                                  t_IP[p$ip$src]$t = network_time();
-                                  t_IP[p$ip$src]$a = 0;
+                                  t_IP[id]$c = 0;
+                                  t_IP[id]$t = network_time();
+                                  t_IP[id]$a = 100;
                                   print "Reset Data";
                                 }
                         }
                         else{
-                                t_IP[p$ip$src]$v = p$ip$id;
+                                t_IP[id]$v = p$ip$id;
                         }
                 }else if (p$ip$src != local_address){
                 #       print "New adders store id";
-			t_IP[p$ip$src] = VTC($v = p$ip$id, $t = network_time(), $c = 0, $a = 0);
+			t_IP[id] = VTC($v = p$ip$id, $t = network_time(), $c = 0, $a = 100);
                 }
         }
 }

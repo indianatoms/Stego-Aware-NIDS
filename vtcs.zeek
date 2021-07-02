@@ -1,10 +1,16 @@
 @load policy/tuning/json-logs.zeek
-#redef enum Notice::Type += { Possible_Steganography };
+redef enum Notice::Type += { Possible_Steganography };
 redef Weird::actions: table[string] of Weird::Action += {
          ["Possible_Steganography"] = Weird::ACTION_NOTICE,
 };
 
+
 global local_address : addr = 192.168.0.235;
+
+type ID: record {
+        src: addr;
+        dst: addr;
+};
 
 type VTC: record {
     v: int; #current value 
@@ -43,8 +49,8 @@ type IAT: record {
 };
 
 function check_freqency(tab: table[addr] of STC, address: addr, value: string, name: string, period: interval &default=1min){
-        tab[address]$a +=1;
         if(address in tab){
+                tab[address]$a +=1;
 		print tab[address]$s;
 		print value;
                 if(tab[address]$s != value)
@@ -130,3 +136,5 @@ function check_freqency_b(tab: table[addr] of BTC, address: addr, value: bool, n
                  tab[address] = BTC($b = value, $t = network_time(), $c = 0, $a = 0);
          }
 }
+
+global id : ID;
