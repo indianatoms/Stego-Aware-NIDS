@@ -1,4 +1,5 @@
 @load policy/protocols/mqtt
+
 @load vtcs.zeek
 
 global MQTT_id : table[addr] of STC = {};
@@ -11,13 +12,15 @@ global counter : int;
 
 
 event zeek_init() {
+	print "hello";
 	counter = 0;
 }
 
 event mqtt_publish (c: connection, is_orig: bool, msg_id: count, msg: MQTT::PublishMsg){
-	print msg$payload;
+#	print "pub";
 #	print find_entropy(msg$payload)$entropy;
 	if (find_entropy(msg$payload)$entropy > 3.5){
+		print "entrophy too high";
 		NOTICE([$note=Possible_Steganography,
 			$conn=c,
 			$ts = network_time(),
@@ -48,8 +51,8 @@ event mqtt_subscribe(c: connection, msg_id: count, topics: string_vec, requested
 
 event mqtt_connect(c: connection, msg: MQTT::ConnectMsg){
 		counter = counter + 1;
-		print "===============";
 		print counter;
+		print "=====";
         check_freqency(MQTT_id,c$id$orig_h,msg$client_id,"MQTT ID CHANGING TOO FREQUENTLY");
         check_freqency(MQTT_user,c$id$orig_h,msg$username,"MQTT USER CHANGING TOO FREQUENTLY");
         check_freqency(MQTT_pass,c$id$orig_h,msg$password,"MQTT PASSWORD CHANGING TOO FREQUENTLY");
@@ -57,3 +60,7 @@ event mqtt_connect(c: connection, msg: MQTT::ConnectMsg){
 	 	check_freqency_b(MQTT_clean,c$id$orig_h,msg$clean_session,"MQTT CLEAN SESSION");
 }
 
+event log_mqtt( msg: MQTT::ConnectInfo)
+{
+	print msg;
+}

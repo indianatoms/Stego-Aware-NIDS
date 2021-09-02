@@ -39,12 +39,15 @@ function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection, 
 		}
 		#check current time
 		tab[address]$t = network_time();
+		
 		#another packet cought
 		print tab[address]$c;
 		tab[address]$c += 1;
 		#after one minute check the interval 
-		if(tab[address]$t - t > 1min){
-			local vo: vector of interval = sort(tab[address]$v, function(a: interval, b:interval): int {return a > b ? 1 : -1;} );
+		if(tab[address]$c > 34){
+			print tab[address]$v;
+			local vo: vector of interval = sort(tab[address]$v);
+			print "dupa";
 			for (i in vo){
 				print "interval: ",|vo[i]|;
 				if (i != |vo|-1){

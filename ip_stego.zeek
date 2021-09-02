@@ -8,10 +8,14 @@ event new_packet (c: connection, p: pkt_hdr){
 		id = ID($src = p$ip$src, $dst = p$ip$dst);
 		if(id in t_TOS){
 			t_TOS[id]$a +=1;
+			print "a", t_TOS[id]$a;
+			print "c", t_TOS[id]$c;
 			if (t_TOS[id]$v != p$ip$tos){
 				if(network_time() - t_TOS[id]$t < 1min){
 					t_TOS[id]$c +=1;
-					if(|t_TOS[id]$a / t_TOS[id]$c | < 10 && t_TOS[id]$a > 20)
+					print "dup";
+					print t_TOS[id]$a / t_TOS[id]$c;
+					if(|t_TOS[id]$a / t_TOS[id]$c | < 20 && t_TOS[id]$a > 20)
                         {
                                                      print "possible stego or someone is using VoIP too much :-)", t_TOS[id]$c;
                                                      NOTICE([$note=Possible_Steganography,
