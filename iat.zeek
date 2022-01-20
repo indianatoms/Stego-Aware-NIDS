@@ -12,6 +12,7 @@ function variance(vec: vector of interval, cou: count){
 	local sum : double = 0;
 	local avg : double = 0;
 	local var : double = 0;
+	local cv : double = 0;
 	local vec2: vector of double;
 
 	for (i in vec){
@@ -20,7 +21,7 @@ function variance(vec: vector of interval, cou: count){
 	avg = |sum/cou|;
 	print "average: ",avg;
 	for (i in vec){
-#		print |(|vec[i]|-avg)|;
+		print |(|vec[i]|-avg)|;
 		vec2[i] = |(|vec[i]|-avg)| * |(|vec[i]|-avg)|;
 	}
 	sum = 0;
@@ -34,37 +35,43 @@ function variance(vec: vector of interval, cou: count){
 
 	var = |sum/cou|;
 	print "varinace: ",var;
+
+	cv = sqrt(var)/avg;
+	print "cv: ",cv;
+
+	#sqare root of variance / mean = CV
+
 	#here you can add additional parameter to check the variance
 
-	if(var > 0.1){
+	if(cv > 0.8){
 		print "possible stego";
 		NOTICE([$note=Possible_Steganography,
             $msg = "Possible steganography",
 			$ts = network_time(),
-            $sub = "The variance is quite high"]);
+            $sub = "The CV is quite high"]);
     }
 }
 
 function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection, t: time){
 	if(address in tab){
-		if(network_time() - tab[address]$t < 2sec){
+		if(network_time() - tab[address]$t < 5sec){
 			tab[address]$v += network_time() - tab[address]$t;
 		}
 		#check current time
 		tab[address]$t = network_time();
 		
 		#another packet cought
-		print tab[address]$c;
+		# print tab[address]$c;
 		tab[address]$c += 1;
 		#after one minute check the interval 
 		if(tab[address]$c > 10){
-			print tab[address]$v;
+			# print tab[address]$v;
 			local vo: vector of interval = sort(tab[address]$v);
 			for (i in vo){
-				print "interval: ",|vo[i]|;
+				# print "interval: ",|vo[i]|;
 				if (i != |vo|-1){
-					print "delta: ",|vo[i]-vo[i+1]|;
-					print "devided ",|(|vo[i]-vo[i+1]|)/vo[i]|;
+					# print "delta: ",|vo[i]-vo[i+1]|;
+					# print "devided ",|(|vo[i]-vo[i+1]|)/vo[i]|;
 					if(|(|vo[i]-vo[i+1]|)/vo[i]| > 0.5){
 						print "possible stego";
 						NOTICE([$note=Possible_Steganography,
@@ -76,7 +83,7 @@ function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection, 
 					}
 				}
 			variance(tab[address]$v, tab[address]$c);
-			print "new set";
+			# print "new set";
 			tab[address]$c = 0;
 			tab[address]$v = vector();
 			#set time to last recived time value.
