@@ -30,10 +30,12 @@ event icmp_echo_request(c: connection , info: icmp_info , id: count , seq: count
 	counter = counter + 1;
 	print "===============";
 	print counter;
-	# print IAT_tab;
+
 	cheek_intervals(IAT_tab,c$id$orig_h,c,t);
 	id1 = ID($src = c$id$orig_h, $dst = c$id$resp_h);
-	# print id1 ;
+	
+	
+	#CHECK ID STEGO
 	if (id1 in ICMP_ID)
 	{
 		if(ICMP_ID[id1] != id){
@@ -60,6 +62,7 @@ event icmp_echo_request(c: connection , info: icmp_info , id: count , seq: count
 		ICMP_ID[id1] = id;
 	}
 	
+	#CHECK SEQUENCE
 	if (id in id_seq){
 		print id_seq[id] , seq;
 		if ( seq == 0 || id_seq[id]+1 == seq || id_seq[id] == seq){

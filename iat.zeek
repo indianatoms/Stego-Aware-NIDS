@@ -8,7 +8,7 @@ type IAT: record {
      t: time;
 };
 
-function variance(vec: vector of interval){
+function variance(vec: vector of interval, cou: count){
 	local sum : double = 0;
 	local avg : double = 0;
 	local var : double = 0;
@@ -17,19 +17,32 @@ function variance(vec: vector of interval){
 	for (i in vec){
 		sum += |vec[i]|;
 	}
-	avg = |sum/vec|;
+	avg = |sum/cou|;
+	print "average: ",avg;
 	for (i in vec){
 #		print |(|vec[i]|-avg)|;
 		vec2[i] = |(|vec[i]|-avg)| * |(|vec[i]|-avg)|;
 	}
 	sum = 0;
 	for (i in vec2){
-#		 print vec2[i];
+		 print vec2[i];
 		 sum += vec2[i];
 	}
-	var = |sum/vec|;
+	print "vector: ",vec;
+	print "sum: ",sum;
+	print "count: ",cou;
+
+	var = |sum/cou|;
 	print "varinace: ",var;
 	#here you can add additional parameter to check the variance
+
+	if(var > 0.1){
+		print "possible stego";
+		NOTICE([$note=Possible_Steganography,
+            $msg = "Possible steganography",
+			$ts = network_time(),
+            $sub = "The variance is quite high"]);
+    }
 }
 
 function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection, t: time){
@@ -44,10 +57,9 @@ function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection, 
 		print tab[address]$c;
 		tab[address]$c += 1;
 		#after one minute check the interval 
-		if(tab[address]$c > 34){
+		if(tab[address]$c > 10){
 			print tab[address]$v;
 			local vo: vector of interval = sort(tab[address]$v);
-			print "dupa";
 			for (i in vo){
 				print "interval: ",|vo[i]|;
 				if (i != |vo|-1){
@@ -63,7 +75,7 @@ function cheek_intervals(tab: table[addr] of IAT, address: addr, c: connection, 
                                                 }
 					}
 				}
-			variance(tab[address]$v);
+			variance(tab[address]$v, tab[address]$c);
 			print "new set";
 			tab[address]$c = 0;
 			tab[address]$v = vector();
