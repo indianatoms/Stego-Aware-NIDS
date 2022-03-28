@@ -18,3 +18,5 @@ In compare.sh I have wrote a simple alerting system. Which is basically comparin
 
 
 **If you use this tool in your research, please cite: Koziak, T., Wasielewska, K., & Janicki, A. (2021, November). How to Make an Intrusion Detection System Aware of Steganographic Transmission. In European Interdisciplinary Cybersecurity Conference (pp. 77-82), https://doi.org/10.1145/3487405.3487421.**
+
+This work has been supported by the SIMARGL Project – Secure Intelligent Methods for Advanced RecoGnition of malware and stegomalware, with the support of the European Commission and the Horizon 2020 Program, under Grant Agreement No. 833042.
